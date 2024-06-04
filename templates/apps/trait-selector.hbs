@@ -1,0 +1,20 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+    {{> "aafo.trait-list" prefix="choices"}}
+
+    {{#if customPath}}
+        <div class="form-group stacked">
+            <label>{{localize "AAFO.TraitSelectorSpecial"}}</label>
+            <div class="form-fields">
+                <input type="text" name="{{customPath}}" value="{{custom}}">
+            </div>
+        </div>
+    {{/if}}
+
+    {{#if bypassesPath}}
+        <h3>{{localize "AAFO.DamagePhysicalBypass"}}</h3>
+        <p class="note">{{localize "AAFO.DamagePhysicalBypassHint"}}</p>
+        {{> "aafo.trait-list" choices=bypasses prefix="bypasses"}}
+    {{/if}}
+
+    <button type="submit"><i class="far fa-save"></i> {{localize "AAFO.TraitSave"}}</button>
+</form>

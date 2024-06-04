@@ -1,0 +1,10 @@
+<form autocomplete="off">
+    {{> "aafo.advancement-controls"}}
+
+    <div class="form-group">
+        <label>{{localize "AAFO.AdvancementHint"}}</label>
+        <textarea name="configuration.hint" placeholder="{{default.hint}}">{{configuration.hint}}</textarea>
+    </div>
+
+    {{> "aafo.trait-list" choices=sizes prefix="configuration.sizes"}}
+</form>

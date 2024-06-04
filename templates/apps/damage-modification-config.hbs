@@ -1,0 +1,22 @@
+<form autocomplete="off">
+    <h3>{{ localize "AAFO.DamageTypes" }}</h3>
+    <p class="note">{{ localize "AAFO.DamageModification.Hint" }}</p>
+    <ol class="trait-list modifications">
+        {{#each modifications}}
+        <li>
+            <label>
+                {{ label }}
+                <input type="text" name="system.traits.dm.amount.{{ @key }}" value="{{ value }}"
+            </label>
+        </li>
+        {{/each}}
+    </ol>
+
+    <h3>{{ localize "AAFO.DamagePhysicalBypass" }}</h3>
+    <p class="note">{{ localize "AAFO.DamageModification.BypassHint" }}</p>
+    {{> "aafo.trait-list" choices=bypasses prefix="system.traits.dm.bypasses" }}
+
+    <button type="submit" name="submit" value="1">
+        <i class="fa-regular fa-save"></i> {{ localize "AAFO.TraitSave" }}
+    </button>
+</form>

@@ -1,0 +1,56 @@
+{
+  "_id": "DVXmyetZuvxbzAwW",
+  "name": "Bedroll",
+  "type": "loot",
+  "img": "icons/sundries/survival/bedroll-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Roll of cloth used by traveller to sleep in.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "SRD 5.1",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 7,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": []
+  },
+  "effects": [],
+  "folder": "dlru9Hy74nSMv6fr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "aafo",
+    "systemVersion": "3.2.0",
+    "coreVersion": "12.324",
+    "createdTime": 1661787233526,
+    "modifiedTime": 1715374587427,
+    "lastModifiedBy": "aafobuilder00000",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!DVXmyetZuvxbzAwW"
+}

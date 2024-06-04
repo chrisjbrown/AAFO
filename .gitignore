@@ -1,0 +1,22 @@
+# Build Artifacts
+aafo.css
+aafo-compiled*
+aafo.lock
+packs/*
+!packs/_source/
+
+# IDE
+.idea/
+.nova/
+.vs/
+.vscode/
+*.code-workspace
+*.iml
+
+# Node Modules
+node_modules/
+
+# OS Specific
+.DS_Store
+
+.tool-versions

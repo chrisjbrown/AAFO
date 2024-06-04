@@ -1,0 +1,210 @@
+{{!-- Action Type --}}
+<div class="form-group select">
+    <label>{{ localize "AAFO.ItemActionType" }}</label>
+    <select name="system.actionType">
+        {{ selectOptions config.itemActionTypes selected=system.actionType blank="" }}
+    </select>
+</div>
+{{#if system.actionType}}
+
+{{!-- Ability Modifier --}}
+<div class="form-group select">
+    <label>{{ localize "AAFO.AbilityModifier" }}</label>
+    <select name="system.ability">
+        {{#select system.ability}}
+        <option value="">{{ localize "AAFO.Default" }}</option>
+        <option value="none">{{ localize "AAFO.None" }}</option>
+        <optgroup label="{{ localize 'AAFO.Ability' }}">
+            {{#each config.abilities as |ability a|}}
+            <option value="{{a}}">{{ability.label}}</option>
+            {{/each}}
+        </optgroup>
+        {{/select}}
+    </select>
+</div>
+
+{{#if system.hasAttack}}
+{{!-- Attack Roll Bonus --}}
+<div class="form-group">
+    <label>{{ localize "AAFO.ItemAttackBonus" }}</label>
+    <div class="form-fields">
+        <input type="text" name="system.attack.bonus" value="{{system.attack.bonus}}" data-formula-editor>
+        <label class="checkbox" data-tooltip="AAFO.ItemAttackFlatHint">
+          <input type="checkbox" name="system.attack.flat" {{checked system.attack.flat}}>
+          {{localize "AAFO.ItemAttackFlat"}}
+        </label>
+    </div>
+</div>
+
+{{!-- Critical Hit Threshold --}}
+<div class="form-group">
+    <label>{{ localize "AAFO.ItemCritThreshold" }}</label>
+    <div class="form-fields">
+        {{numberInput system.critical.threshold name="system.critical.threshold" placeholder="20" max=20 min=1 step=1}}
+    </div>
+</div>
+
+{{!-- Critical Hit Damage --}}
+<div class="form-group">
+    <label>{{ localize "AAFO.ItemCritExtraDamage" }}</label>
+    <div class="form-fields">
+        <input type="text" name="system.critical.damage" value="{{system.critical.damage}}">
+    </div>
+</div>
+{{/if}}
+
+{{!-- Damage Formula --}}
+<h4 class="damage-header">
+    {{#unless isHealing}}{{ localize "AAFO.Damage" }}{{ else }}{{ localize "AAFO.Healing" }}{{/unless}}
+    {{ localize "AAFO.Formula" }}
+    <a class="damage-control add-damage"><i class="fas fa-plus"></i></a>
+</h4>
+<ol class="damage-parts form-group">
+    {{#each system.damage.parts as |part i| }}
+    <li class="damage-part flexrow" data-damage-part="{{i}}">
+        <input type="text" name="system.damage.parts.{{i}}.0" value="{{lookup this "0"}}" data-formula-editor/>
+        <select name="system.damage.parts.{{i}}.1">
+            {{#select (lookup this "1")}}
+                <option value="">{{ localize "AAFO.None" }}</option>
+                <optgroup label="{{localize 'AAFO.Damage'}}">
+                    {{selectOptions @root.config.damageTypes labelAttr="label"}}
+                </optgroup>
+                <optgroup label="{{localize 'AAFO.Healing'}}">
+                    {{selectOptions @root.config.healingTypes labelAttr="label"}}
+                </optgroup>
+            {{/select}}
+        </select>
+        <a class="damage-control delete-damage"><i class="fas fa-minus"></i></a>
+    </li>
+    {{/each}}
+</ol>
+
+{{!-- Versatile Damage --}}
+{{#if system.damage.parts.length }}
+<div class="form-group">
+    <label>{{ localize "AAFO.VersatileDamage" }}</label>
+    <div class="form-fields">
+        <input type="text" name="system.damage.versatile" value="{{system.damage.versatile}}"
+               placeholder="{{ localize 'AAFO.Formula' }}" data-formula-editor>
+    </div>
+</div>
+{{/if}}
+
+{{!-- Other Formula --}}
+<div class="form-group">
+    <label>{{ localize "AAFO.OtherFormula" }}</label>
+    <div class="form-fields">
+        <input type="text" name="system.formula" value="{{system.formula}}"
+               placeholder="{{ localize 'AAFO.Formula' }}" data-formula-editor>
+    </div>
+</div>
+
+{{!-- Saving Throw --}}
+<div class="form-group input-select">
+    <label>{{ localize "AAFO.ActionSave" }}</label>
+    <div class="form-fields">
+        <select name="system.save.ability">
+            {{selectOptions config.abilities selected=system.save.ability labelAttr="label" blank=""}}
+        </select>
+        <span>{{ localize "AAFO.VsDC" }}</span>
+        <input type="number" step="any" name="system.save.dc"
+            value="{{#if system.save.dc}}{{system.save.dc}}{{/if}}"
+            placeholder="{{ localize 'AAFO.AbbreviationDC' }}" {{#unless isFlatDC}}disabled{{/unless}}>
+        <select name="system.save.scaling">
+            {{#select system.save.scaling}}
+                <option value="spell">{{ localize "AAFO.Spellcasting" }}</option>
+                {{selectOptions config.abilities labelAttr="label"}}
+                <option value="flat">{{ localize "AAFO.Flat" }}</option>
+            {{/select}}
+        </select>
+    </div>
+</div>
+
+{{!-- Enchantment --}}
+{{#if system.isEnchantment}}
+<div class="form-group enchantment">
+    <label>{{ localize "AAFO.Enchantment.Label" }}</label>
+    <div class="form-fields">
+        <a class="config-button" data-action="enchantment">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+            {{ localize "AAFO.Enchantment.Action.Configure" }}
+        </a>
+    </div>
+    {{#if appliedEnchantments.length}}
+    <ul class="separated-list aafo2">
+        {{#each appliedEnchantments}}
+        <li class="item" data-enchantment-uuid="{{ enchantment.uuid }}">
+            <div class="details flexrow">
+                <img class="gold-icon" src="{{ item.img }}" alt="{{ name }}">
+                <span class="name">
+                    {{#if actor}}
+                    {{{ localize "AAFO.Enchantment.Items.Entry" item=name actor=actor.name }}}
+                    {{else}}
+                    {{ name }}
+                    {{/if}}
+                </span>
+                <div class="list-controls flexrow">
+                    {{#if item.isOwner}}
+                    <button type="button" class="unbutton" data-action="view" data-uuid="{{ item.uuid }}"
+                            data-tooltip="AAFO.ItemView" aria-label="{{ localize 'AAFO.ItemView' }}">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                    </button>
+                    <button type="button" class="enchantment-button unbutton" data-action="removeEnchantment"
+                            data-tooltip="AAFO.Enchantment.Action.Remove"
+                            aria-label="{{ localize 'AAFO.Enchantment.Action.Remove' }}">
+                        <i class="fa-solid fa-rotate-left" aria-hidden="true"></i>
+                    </button>
+                    {{/if}}
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+</div>
+{{/if}}
+
+{{!-- Summoning --}}
+{{#if (eq system.actionType "summ")}}
+<div class="form-group summoning">
+    <label>{{ localize "AAFO.Summoning.Label" }}</label>
+    <div class="form-fields">
+        <a class="config-button" data-action="summoning">
+            <i class="fa-solid fa-gear" aria-hidden="true"></i>
+            {{ localize "AAFO.Summoning.Action.Configure" }}
+        </a>
+        <label class="checkbox" data-tooltip="AAFO.Summoning.Prompt.Hint">
+            <input type="checkbox" name="system.summons.prompt" {{ checked system.summons.prompt }}>
+            {{ localize "AAFO.Summoning.Prompt.Label" }}
+        </label>
+    </div>
+    {{#with system.summons.summonedCreatures as |summonedCreatures|}}
+    {{#if summonedCreatures.length}}
+    <ul class="separated-list aafo2">
+        {{#each summonedCreatures}}
+        <li class="item" data-summon-uuid="{{ uuid }}">
+            <div class="details flexrow">
+                <img class="gold-icon" src="{{ img }}" alt="{{ name }}">
+                <span class="name">{{ name }}</span>
+                <div class="list-controls flexrow">
+                    <button type="button" class="unbutton" data-action="view" data-uuid="{{ uuid }}"
+                            data-tooltip="AAFO.Summoning.Action.View"
+                            aria-label="{{ localize 'AAFO.Summoning.Action.View' }}">
+                        <i class="fa-solid fa-eye" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+    {{/if}}
+    {{/with}}
+</div>
+{{/if}}
+
+{{!-- Chat Message Flavor --}}
+<div class="form-group stacked">
+    <label>{{ localize "AAFO.ChatFlavor" }}</label>
+    <input type="text" name="system.chatFlavor" value="{{system.chatFlavor}}"/>
+</div>
+{{/if}}

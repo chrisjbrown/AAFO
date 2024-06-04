@@ -1,0 +1,123 @@
+{
+  "name": "Adaptive Reflexes (Arm or Leg)",
+  "type": "perk",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirement: Missing Hand or Foot</p><p>You've learned to endure and overcome your disability. If you lost your foot or leg, you are no longer limited to moving only 20 feet on a turn. If you lost your hand or foot: you gain 3 points which you can use to increase any of your ability scores by the amount used. If you lost your arm or leg: you gain 5 points which you can use to increase any of your ability scores by the amount used. Repeat: You can take this perk as many times as you have missing arms or legs.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    },
+    "advancement": [
+      {
+        "_id": "7vBVSVpw51cfFauL",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 5,
+          "fixed": {
+            "str": 0,
+            "per": 0,
+            "end": 0,
+            "cha": 0,
+            "int": 0,
+            "agi": 0,
+            "luc": 0
+          },
+          "cap": 10
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ]
+  },
+  "effects": [],
+  "folder": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717520153680,
+    "modifiedTime": 1717520153680,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_id": "vQUvoLYo5du1DPWR",
+  "sort": 0,
+  "_key": "!items!vQUvoLYo5du1DPWR"
+}

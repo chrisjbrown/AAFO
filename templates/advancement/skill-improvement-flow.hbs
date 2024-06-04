@@ -1,0 +1,12 @@
+<form id="{{appId}}" data-level="{{level}}" data-id="{{advancement.id}}" data-type="{{type}}">
+    <h3>{{{this.title}}}</h3>
+
+    <ul class="skill-scores">
+        <label>
+            {{ pointsRemaining }}
+        </label>
+        {{#each skills}}
+        {{> "aafo.advancement-skill-control" this canAdjust=(not @root.staticIncrease)}}
+        {{/each}}
+    </ul>
+</form>

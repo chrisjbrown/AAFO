@@ -1,0 +1,184 @@
+{
+  "name": "Champion",
+  "type": "subclass",
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>The archetypal Champion focuses on the development of raw physical power honed to deadly perfection. Those who model themselves on this archetype combine rigorous training with physical excellence to deal devastating blows.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "SRD 5.1",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "identifier": "champion",
+    "classIdentifier": "fighter",
+    "advancement": [
+      {
+        "_id": "bsdg4f5me0klskxn",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.aafo.classfeatures.YgLQV1O849wE5TgM"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 3,
+        "title": "Features"
+      },
+      {
+        "_id": "22ktkhqczogk0jcg",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.aafo.classfeatures.dHu1yzIjD38BvGGd"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 7,
+        "title": "Features"
+      },
+      {
+        "_id": "r84l4q20d5aduwlw",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.aafo.classfeatures.kYJsED0rqqqUcgKz"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 10,
+        "title": "Features"
+      },
+      {
+        "_id": "p4pxgvxtf206xc35",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.aafo.classfeatures.aVKH6TLn1AG9hPSA"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 15,
+        "title": "Features"
+      },
+      {
+        "_id": "y6rlhwedv35dcrsq",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            "Compendium.aafo.classfeatures.ipG5yx1tRNmeJfSH"
+          ],
+          "optional": false,
+          "spell": {
+            "ability": "",
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          }
+        },
+        "value": {},
+        "level": 18,
+        "title": "Features"
+      },
+      {
+        "_id": "DDqfOiw4IQMv4bAi",
+        "type": "ItemChoice",
+        "configuration": {
+          "hint": "Choose a second option from the Fighting Style class feature.",
+          "choices": {
+            "10": 1
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            "Compendium.aafo.classfeatures.8YwPFv3UAPjWVDNf",
+            "Compendium.aafo.classfeatures.zSlV0O2rQMdoq6pB",
+            "Compendium.aafo.classfeatures.hCop9uJrWhF1QPb4",
+            "Compendium.aafo.classfeatures.3Nc6u9pyStByuJsm",
+            "Compendium.aafo.classfeatures.06NVMYf58Z76O85O",
+            "Compendium.aafo.classfeatures.mHcSjcHJ8oZu3hkb"
+          ],
+          "spell": {
+            "ability": "",
+            "preparation": "",
+            "uses": {
+              "max": "",
+              "per": ""
+            }
+          },
+          "restriction": {
+            "type": "class",
+            "subtype": "fightingStyle",
+            "level": ""
+          }
+        },
+        "value": {},
+        "title": "Additional Fighting Style"
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": "Xk0PbUqy0A8R3Ut1",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_id": "sprHbe7cRg9osTzf",
+  "_stats": {
+    "systemId": "aafo",
+    "systemVersion": "3.0.0",
+    "coreVersion": "12.324",
+    "createdTime": 1661787234296,
+    "modifiedTime": 1704824719309,
+    "lastModifiedBy": "aafobuilder00000",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!sprHbe7cRg9osTzf"
+}

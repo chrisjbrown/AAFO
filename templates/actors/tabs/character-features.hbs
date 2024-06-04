@@ -1,0 +1,178 @@
+{{!-- Classes --}}
+<section class="classes pills-lg {{#if @root.editable}}editing{{/if}}">
+    {{#each classes as |cls|}}
+    {{#if (eq cls.type "class")}}
+    {{#aafo-itemContext cls as |ctx|}}
+    <div class="class pill-lg" data-item-id="{{ cls.id }}" style="--underlay: url('{{ ctx.prefixedImage }}');">
+        <div class="icons {{#if cls.subclass}}subclass{{/if}}">
+            <img class="gold-icon item-tooltip" src="{{ cls.img }}" alt="{{ cls.name }}" data-action="edit"
+                 data-item-id="{{ cls.id }}">
+            {{#if cls.subclass}}
+            <img class="gold-icon item-tooltip" src="{{ cls.subclass.img }}" alt="{{ cls.subclass.name }}"
+                 data-action="edit" data-item-id="{{ cls.subclass.id }}">
+            {{/if}}
+            {{#if @root.editable}}
+            <div class="controls">
+                <a class="deletion-control item-control item-action" data-action="delete"
+                   data-tooltip="AAFO.ItemDelete" data-item-id="{{ cls.id }}"
+                   aria-label="{{ localize "AAFO.ItemDelete" }}">
+                    <i class="fas fa-circle-xmark"></i>
+                </a>
+                {{#if cls.subclass}}
+                <a class="deletion-control item-control item-action" data-action="delete"
+                   data-tooltip="AAFO.ItemDelete" data-item-id="{{ cls.subclass.id }}"
+                   aria-label="{{ localize "AAFO.ItemDelete" }}">
+                    <i class="fas fa-circle-xmark"></i>
+                </a>
+                {{/if}}
+            </div>
+            {{/if}}
+        </div>
+        <div class="name-stacked">
+            <div class="title">{{ cls.name }}</div>
+            {{#if cls.subclass}}
+            <div class="subtitle">{{ cls.subclass.name }}</div>
+            {{/if}}
+        </div>
+        <div class="level">
+            {{#if @root.editable}}
+            <select class="level-selector">
+                {{#select 0}}
+                {{#each ctx.availableLevels}}
+                <option value="{{ delta }}" {{ disabled this.disabled }}>
+                    {{ level }}
+                    {{#if delta}}({{ aafo-numberFormat delta signDisplay="always"}}){{/if}}
+                </option>
+                {{/each}}
+                {{/select}}
+            </select>
+            {{else}}
+            <span>{{ cls.system.levels }}</span>
+            {{/if}}
+        </div>
+    </div>
+    {{/aafo-itemContext}}
+    {{/if}}
+    {{else}}
+    <div class="pill-lg empty roboto-upper" data-action="findItem" data-item-type="class">
+        {{ localize "AAFO.ClassAdd" }}
+    </div>
+    {{/each}}
+</section>
+
+{{!-- Features --}}
+<{{elements.inventory}} class="inventory-element" v2>
+    {{!-- Searching, Filtering, & Sorting --}}
+    <item-list-controls for="features" label="{{ localize "AAFO.FeatureSearch" }}" sort="toggle" group
+                        group-label="{{ localize "AAFO.FilterGroupOrigin" }}" collection="items">
+        <datalist>
+            <option value="action">{{ localize "AAFO.Action" }}</option>
+            <option value="bonus">{{ localize "AAFO.BonusAction" }}</option>
+            <option value="reaction">{{ localize "AAFO.Reaction" }}</option>
+            <option value="sr">{{ localize "AAFO.ShortRest" }}</option>
+            <option value="lr">{{ localize "AAFO.LongRest" }}</option>
+            <option value="concentration">{{ localize "AAFO.Concentration" }}</option>
+            <option value="mgc">{{ localize "AAFO.Item.Property.Magical" }}</option>
+        </datalist>
+    </item-list-controls>
+
+    {{!-- Features List --}}
+    <section class="items-list features-list" data-item-list="features">
+
+        {{!-- Sections / Categories --}}
+        {{#each sections}}
+        <div class="items-section card" {{ aafo-dataset dataset }}>
+
+            {{!-- Section Header --}}
+            <div class="items-header header">
+                <h3 class="item-name">{{ localize label }}</h3>
+                <div class="item-header item-uses">{{ localize "AAFO.Uses" }}</div>
+                <div class="item-header item-recovery">{{ localize "AAFO.Recovery" }}</div>
+                <div class="item-header item-controls"></div>
+            </div>
+
+            {{!-- Section Contents --}}
+            <ol class="item-list unlist">
+                {{#each items as |item|}}
+                {{#aafo-itemContext item as |ctx|}}
+
+                {{!-- Items --}}
+                <li class="item" data-item-id="{{ item.id }}" data-entry-id="{{ item.id }}"
+                    data-item-name="{{ item.name }}" data-item-sort="{{ item.sort }}" data-grouped="{{ ctx.group }}"
+                    data-ungrouped="{{#if ../hasActions}}active{{else}}passive{{/if}}">
+
+                    {{!-- Item Name --}}
+                    <div class="item-name item-action item-tooltip {{ @root.rollableClass }}" role="button"
+                         data-action="use" aria-label="{{ item.name }}">
+                        <img class="item-image gold-icon" src="{{ item.img }}" alt="{{ item.name }}">
+                        <div class="name name-stacked">
+                            <span class="title">{{ item.name }}</span>
+                            {{#if ctx.subtitle}}
+                            <span class="subtitle">{{{ ctx.subtitle }}}</span>
+                            {{/if}}
+                        </div>
+                        <div class="tags">
+                            {{#each item.labels.properties}}
+                            {{#if icon}}
+                            <span aria-label="{{ label }}">
+                                <aafo-icon src="{{ icon }}"></aafo-icon>
+                            </span>
+                            {{/if}}
+                            {{/each}}
+                        </div>
+                    </div>
+
+                    {{!-- Item Uses --}}
+                    <div class="item-detail item-uses {{#unless ctx.hasUses}}empty{{/unless}}">
+                        {{#if ctx.hasUses}}
+                        <input type="text" value="{{ item.system.uses.value }}" placeholder="0" data-dtype="Number"
+                               data-name="system.uses.value" inputmode="numeric" pattern="[+=\-]?\d*">
+                        <span class="separator">&sol;</span>
+                        <span class="max">{{ item.system.uses.max }}</span>
+                        {{/if}}
+                    </div>
+
+                    {{!-- Item Recovery --}}
+                    <div class="item-detail item-recovery {{#unless item.system.uses.per}}empty{{/unless}}">
+                        {{#if item.system.uses.per}}
+                        <span class="condensed">{{ item.labels.recovery }}</span>
+                        {{/if}}
+                    </div>
+
+                    {{!-- Item Status --}}
+                    <div class="item-detail item-controls">
+
+                        {{#if @root.editable}}
+                        {{!-- Editing --}}
+                        <a class="item-control item-action" data-action="edit" data-tooltip="AAFO.ItemEdit"
+                           aria-label="{{ localize "AAFO.ItemEdit" }}">
+                            <i class="fas fa-pen-to-square"></i>
+                        </a>
+
+                        {{!-- Deleting --}}
+                        <a class="item-control item-action" data-action="delete" data-tooltip="AAFO.ItemDelete"
+                           aria-label="{{ localize "AAFO.ItemDelete" }}">
+                            <i class="fas fa-trash"></i>
+                        </a>
+                        {{/if}}
+
+                        {{!-- Context Menu --}}
+                        <a class="item-control interface-only" data-context-menu
+                           aria-label="{{ localize "AAFO.AdditionalControls" }}">
+                            <i class="fas fa-ellipsis-vertical"></i>
+                        </a>
+
+                    </div>
+
+                </li>
+
+                {{/aafo-itemContext}}
+                {{/each}}
+            </ol>
+
+        </div>
+        {{/each}}
+
+    </section>
+
+</{{elements.inventory}}>

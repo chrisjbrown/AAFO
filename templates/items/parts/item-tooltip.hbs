@@ -1,0 +1,97 @@
+<section class="content">
+    <section class="header">
+        {{#if school}}
+        <div class="school">
+            {{#with (lookup @root.config.spellSchools school) as |schoolConfig|}}
+            <aafo-icon src="{{ schoolConfig.icon }}"></aafo-icon>
+            {{/with}}
+        </div>
+        {{/if}}
+        <div class="top">
+            <img src="{{ img }}" alt="{{ name }}">
+            <div class="name name-stacked">
+                <span class="title">{{ name }}</span>
+                <span class="subtitle">{{{ subtitle }}}</span>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="price">
+                {{#if price}}
+                <i class="currency {{ price.denomination }}"></i>
+                <span>{{ aafo-numberFormat price.value }}</span>
+                {{/if}}
+            </div>
+
+            <div class="charges">
+                {{#if uses.max}}
+                <span class="value">{{ uses.value }}</span>
+                <span class="separator">&sol;</span>
+                <span class="max">{{ uses.max }}</span>
+                <span>{{ localize "AAFO.Charges" }}</span>
+                {{/if}}
+            </div>
+            <div class="weight">
+                {{#if weight}}
+                <i class="fas fa-weight-hanging"></i>
+                <span>{{ weight.value }}</span>
+                {{/if}}
+            </div>
+        </div>
+    </section>
+    {{#if (eq type "spell")}}
+    <ul class="info unlist">
+        <li>
+            <strong>{{ localize "AAFO.SpellCastTime" }}:</strong>
+            <span class="value">
+                {{ labels.activation }}
+                {{#if activation.condition}}
+                <span class="condition">({{ activation.condition }})</span>
+                {{/if}}
+            </span>
+        </li>
+        <li>
+            <strong>{{ localize "AAFO.Range" }}:</strong>
+            <span class="value">{{ labels.range }}</span>
+        </li>
+        <li>
+            <strong>{{ localize "AAFO.Target" }}:</strong>
+            <span class="value">{{ labels.target }}</span>
+        </li>
+        <li>
+            <strong>{{ localize "AAFO.Components" }}:</strong>
+            <span class="value">
+                {{ labels.components.vsm }}
+                {{#if materials.value}}
+                <span class="materials">({{ materials.value }})</span>
+                {{/if}}
+            </span>
+        </li>
+        <li>
+            <strong>{{ localize "AAFO.Duration" }}:</strong>
+            <span class="value">{{ labels.concentrationDuration }}</span>
+        </li>
+    </ul>
+    {{/if}}
+    <section class="description">{{{ description.value }}}</section>
+    <ul class="pills">
+        {{#if isSpell}}
+        {{#each tags}}
+        <li class="pill pill-sm">
+            <span class="label">{{ this }}</span>
+        </li>
+        {{/each}}
+        {{else}}
+        {{#each properties}}
+        <li class="pill pill-sm">
+            <span class="label">{{ this }}</span>
+        </li>
+        {{/each}}
+        {{/if}}
+    </ul>
+    {{#if controlHints}}
+    <div class="lock-hint">
+        <img src="systems/aafo/icons/svg/mouse-middle.svg" alt="{{ localize "AAFO.Controls.MiddleClick" }}">
+        <span>{{ localize "AAFO.Controls.LockHint" }}</span>
+    </div>
+    {{/if}}
+</section>

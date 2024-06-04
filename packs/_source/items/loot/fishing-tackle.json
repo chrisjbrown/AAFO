@@ -1,0 +1,56 @@
+{
+  "_id": "hOzuSDqmOIOx8z3Z",
+  "name": "Fishing Tackle",
+  "type": "loot",
+  "img": "icons/tools/fishing/hook-curved-barbed-steel-white.webp",
+  "system": {
+    "description": {
+      "value": "<p>This kit includes a wooden rod, silken line, corkwood bobbers, steel hooks, lead sinkers, velvet lures, and narrow netting.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "SRD 5.1",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 4,
+      "units": "lb"
+    },
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": []
+  },
+  "effects": [],
+  "folder": "dlru9Hy74nSMv6fr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "aafo",
+    "systemVersion": "3.2.0",
+    "coreVersion": "12.324",
+    "createdTime": 1661787233813,
+    "modifiedTime": 1715374633272,
+    "lastModifiedBy": "aafobuilder00000",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!hOzuSDqmOIOx8z3Z"
+}

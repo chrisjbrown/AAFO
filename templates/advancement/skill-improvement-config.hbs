@@ -1,0 +1,12 @@
+<form autocomplete="off" data-id="{{_id}}" data-type="{{type}}">
+    {{> "aafo.advancement-controls"}}
+    <ul class="skill-scores">
+        {{> "aafo.advancement-skill-control" points canAdjust=true}}
+        <li class="hint">
+            {{localize "AAFO.AdvancementSkillImprovementPointsHint"}}
+        </li>
+        {{#each abilities}}
+        {{> "aafo.advancement-skill-control" this canAdjust=true}}
+        {{/each}}
+    </ul>
+</form>

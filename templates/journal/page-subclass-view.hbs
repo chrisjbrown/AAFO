@@ -1,0 +1,38 @@
+{{#if data.title.show}}
+<header>
+    <h{{title.level1}}>{{data.name}}</h{{title.level1}}>
+</header>
+{{/if}}
+
+{{#if linked.document}}
+
+<section class="journal-page-content">
+    {{{ enriched.value }}}
+
+    {{> "aafo.journal-table" table=table level=title.level3
+        caption=(localize "JOURNALENTRYPAGE.AAFO.Class.TableCaption" class=linked.name) }}
+
+    {{#each features}}
+    <h{{ @root.title.level4 }}>{{ this.name }}</h{{ @root.title.level4 }}>
+    {{{ this.description }}}
+    {{/each}}
+
+    {{#if optionalTable}}
+    <h{{ title.level2 }}>{{ localize "JOURNALENTRYPAGE.AAFO.Class.OptionalFeaturesCaption" }}</h{{ title.level2 }}>
+    <p>{{ localize "JOURNALENTRYPAGE.AAFO.Class.OptionalFeaturesDescription" class=linked.lowercaseName }}</p>
+
+    {{> "aafo.journal-table" table=optionalTable level=title.level3
+        caption=(localize "JOURNALENTRYPAGE.AAFO.Class.TableOptionalCaption" class=linked.name) }}
+
+    {{#each optionalFeatures}}
+    <h{{ @root.title.level4 }}>{{ this.name }}</h{{ @root.title.level4 }}>
+    {{{ this.description }}}
+    {{/each}}
+    {{/if}}
+</section>
+
+{{else}}
+<section>
+    {{ localize "JOURNALENTRYPAGE.AAFO.Subclass.NoValidSubclass" }}
+</section>
+{{/if}}

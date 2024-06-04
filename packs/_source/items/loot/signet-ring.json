@@ -1,0 +1,56 @@
+{
+  "_id": "kdkpSZMUHGXGM15H",
+  "name": "Signet Ring",
+  "type": "loot",
+  "img": "icons/equipment/finger/ring-cabochon-gold-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>A ring with specific design to denote membership and rank within a house or organization.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "book": "SRD 5.1",
+      "page": "",
+      "license": "CC-BY-4.0"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "identified": true,
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "unidentified": {
+      "description": ""
+    },
+    "container": null,
+    "properties": []
+  },
+  "effects": [],
+  "folder": "dlru9Hy74nSMv6fr",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "aafo",
+    "systemVersion": "3.2.0",
+    "coreVersion": "12.324",
+    "createdTime": 1661787233838,
+    "modifiedTime": 1715374638027,
+    "lastModifiedBy": "aafobuilder00000",
+    "compendiumSource": null,
+    "duplicateSource": null
+  },
+  "_key": "!items!kdkpSZMUHGXGM15H"
+}

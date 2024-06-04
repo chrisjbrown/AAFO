@@ -1,0 +1,34 @@
+<form class="{{ cssClass }} flexcol drop-target" autocomplete="off">
+    {{> journalEntryPageHeader }}
+
+    <div class="form-group">
+        <label>{{ localize "JOURNALENTRYPAGE.AAFO.Subclass.Item" }}</label>
+        <div class="form-fields">
+            <ol class="items-list">
+                {{#if document.system.item}}
+                <li class="item flexrow" data-item-uuid="{{ document.system.item }}" data-item-type="linked">
+                    <div class="item-name">{{{ aafo-linkForUuid document.system.item }}}</div>
+                    <div class="item-controls flexrow">
+                        <a class="item-control item-delete" data-tooltip="AAFO.ItemDelete"
+                           aria-label="{{ localize 'AAFO.ItemDelete' }}">
+                            <i class="fa-solid fa-trash" inert></i>
+                        </a>
+                    </div>
+                </li>
+                {{else}}
+                <li class="item flexrow">{{ localize "JOURNALENTRYPAGE.AAFO.Subclass.ItemHint" }}</li>
+                {{/if}}
+            </ol>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>{{ localize "JOURNALENTRYPAGE.AAFO.Subclass.Description" }}</label>
+        <div class="form-fields">
+            <button class="launch-text-editor" data-target="system.description.value">
+                <i class="fas fa-edit" inert></i> {{ localize "JOURNALENTRYPAGE.AAFO.EditDescription" }}
+            </button>
+        </div>
+        <p class="hint">{{localize "JOURNALENTRYPAGE.AAFO.Subclass.DescriptionHint"}}</p>
+    </div>
+</form>

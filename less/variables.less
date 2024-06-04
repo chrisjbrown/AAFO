@@ -1,0 +1,132 @@
+/* ----------------------------------------- */
+/*  Fonts                                    */
+/* ----------------------------------------- */
+
+@font-face {
+  font-family: 'Modesto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../fonts/modesto-condensed/modesto-condensed.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Modesto Condensed';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../fonts/modesto-condensed/modesto-condensed-bold.woff2') format('woff2');
+}
+
+/* ----------------------------------------- */
+/*  Sheet Styles                             */
+/* ----------------------------------------- */
+
+:root {
+  --aafo-color-black: #000;
+  --aafo-color-dark: #191813;
+  --aafo-color-faint: #c9c7b8;
+  --aafo-color-beige: #b5b3a4;
+  --aafo-color-tan: #7a7971;
+  --aafo-color-olive: #4b4a44;
+  --aafo-color-crimson: #44191A;
+  --aafo-color-groove: #eeede0;
+  --aafo-color-gold: #9f9275;
+  --aafo-color-red: #ed1c24;
+  --aafo-color-blue: cornflowerblue;
+  --aafo-color-green: #205b15;
+  --aafo-color-maroon: #741b2b;
+  --aafo-color-parchment: #f1ebe8;
+  --aafo-color-scrollbar: var(--aafo-color-gold);
+  --aafo-color-card: #f8f4f1;
+  --aafo-color-hp-1: #1b4b29;
+  --aafo-color-hp-2: #3ba55d;
+  --aafo-color-hp-3: #276d3c;
+  --aafo-color-hd-1: #401f25;
+  --aafo-color-hd-2: var(--aafo-color-maroon);
+  --aafo-color-hd-3: #500000;
+  --aafo-color-sc-1: #433754;
+  --aafo-color-sc-2: #776493;
+  --aafo-color-sp-1: var(--aafo-color-blue);
+  --aafo-color-sp-2: var(--aafo-color-maroon);
+  --aafo-color-sp-3: var(--aafo-color-crimson);
+  --aafo-color-blue-white: #cfd2da;
+  --aafo-color-blue-gray-1: #242731;
+  --aafo-color-blue-gray-2: #252830;
+  --aafo-color-blue-gray-3: #434857;
+  --aafo-color-iron-gray: #313131;
+  --aafo-color-light-gray: #3d3d3d;
+  --aafo-color-dark-gray: #0d0b0b;
+  --aafo-color-success: #006c00;
+  --aafo-color-success-background: #c7d0c0;
+  --aafo-color-success-critical: green;
+  --aafo-color-failure: #6e0000;
+  --aafo-color-failure-background: #ffdddd;
+  --aafo-color-failure-critical: red;
+  --aafo-color-application-damage: #9c5b47;
+  --aafo-color-application-healing: #3c7f58;
+  --aafo-color-application-temp: #007F7F;
+  --aafo-background-10: rgb(0 0 0 / 10%);
+  --aafo-background-5: rgb(0 0 0 / 5%);
+  --aafo-background-card: var(--aafo-color-card);
+  --aafo-background-parchment: var(--aafo-color-parchment);
+  --aafo-border-dark: 1px solid #999;
+  --aafo-border-light: 1px solid #CCC;
+  --aafo-border-groove: 2px groove var(--aafo-color-groove);
+  --aafo-border-dotted: 1px dotted #bbb;
+  --aafo-border-gold: 1px solid var(--aafo-color-gold);
+  --aafo-font-modesto: "Modesto Condensed", "Palatino Linotype", serif;
+  --aafo-font-roboto: Roboto, sans-serif;
+  --aafo-font-roboto-condensed: "Roboto Condensed", sans-serif;
+  --aafo-font-roboto-slab: "Roboto Slab", serif;
+  --aafo-sheet-background: url("ui/parchment.jpg") repeat;
+  --aafo-shadow-45: rgb(0 0 0 / 45%);
+  --aafo-shadow-15: rgb(0 0 0 / 15%);
+  --aafo-highlight-45: rgb(255 255 255 / 45%);
+  --font-size-9: 0.5625rem;
+  --font-size-10: 0.625rem;
+  --font-size-23: 1.4375rem;
+  --font-size-30: 1.875rem;
+  --font-size-36: 2.25rem;
+  --font-size-42: 2.625rem;
+  --font-size-46: 2.875rem;
+
+  --aafo-capacity-container-background-color: oklch(57.5% 0.012 101);
+  --aafo-capacity-container-border-color: oklch(20.8% 0.01 98);
+  --aafo-capacity-background-color: oklch(62% 0.05 246);
+  --aafo-capacity-border-color: oklch(91% 0.044 252.5);
+  --aafo-capacity-text-color: oklch(95% 0 0);
+}
+
+/* ----------------------------------------- */
+/*  Flexbox                                  */
+/* ----------------------------------------- */
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  > * {
+    flex: 1;
+  }
+
+  .flex1 { flex: 1; }
+  .flex2 { flex: 2; }
+  .flex3 { flex: 3; }
+  .flex4 { flex: 4; }
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+
+  > * {
+    flex: 1;
+  }
+
+  .flex1 { flex: 1; }
+  .flex2 { flex: 2; }
+  .flex3 { flex: 3; }
+  .flex4 { flex: 4; }
+}

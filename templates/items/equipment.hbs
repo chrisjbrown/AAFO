@@ -1,0 +1,192 @@
+<form class="{{cssClass}} flexcol" autocomplete="off">
+
+    {{!-- Item Sheet Header --}}
+    <header class="sheet-header flexrow">
+        <img class="profile" src="{{item.img}}" data-tooltip="{{item.name}}" data-edit="img">
+
+        <div class="header-details flexrow">
+            <h1 class="charname">
+                {{#if system.identified}}
+                <input name="name" type="text" value="{{item.name}}" placeholder="{{ localize 'AAFO.ItemName' }}">
+                {{else}}
+                <input name="system.unidentified.name" type="text" value="{{system.unidentified.name}}"
+                       placeholder="{{ localize 'AAFO.NameUnidentified' }}">
+                {{/if}}
+            </h1>
+
+            <div class="item-subtitle">
+                <h4 class="item-type">{{itemType}}</h4>
+                <label class="equipped">
+                    <input type="checkbox" name="system.equipped" {{checked system.equipped}}>
+                    {{#if system.equipped}}
+                        {{ localize "AAFO.Equipped" }}
+                        {{#if editable}}<i class="fa-solid fa-toggle-on"></i>{{/if}}
+                    {{else}}
+                        {{ localize "AAFO.Unequipped" }}
+                        {{#if editable}}<i class="fa-solid fa-toggle-off"></i>{{/if}}
+                    {{/if}}
+                </label>
+                <label class="identified">
+                    <input type="checkbox" name="system.identified" {{checked system.identified}}>
+                    {{#if system.identified}}
+                        {{ localize "AAFO.Identified" }}
+                        {{#if editable}}<i class="fa-solid fa-toggle-on"></i>{{/if}}
+                    {{else}}
+                        {{ localize "AAFO.Unidentified.Title" }}
+                        {{#if editable}}<i class="fa-solid fa-toggle-off"></i>{{/if}}
+                    {{/if}}
+                </label>
+            </div>
+
+            <ul class="summary flexrow">
+                <li>{{ system.type.label }}</li>
+                <li>
+                    {{#if concealDetails}}
+                    <span>{{ localize "AAFO.Unidentified.Title" }}</span>
+                    {{else}}
+                    <select name="system.rarity" {{~#if concealDetails}} inert{{/if}}>
+                        {{selectOptions config.itemRarity selected=system.rarity blank=""}}
+                    </select>
+                    {{/if}}
+                </li>
+                <li>
+                    {{> "aafo.item-source"}}
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    {{!-- Item Sheet Navigation --}}
+    <nav class="sheet-navigation tabs" data-group="primary">
+        <a class="item active" data-tab="description">{{ localize "AAFO.Description" }}</a>
+        <a class="item" data-tab="details">{{ localize "AAFO.Details" }}</a>
+        <a class="item" data-tab="effects">{{ localize "AAFO.Effects" }}</a>
+    </nav>
+
+    {{!-- Item Sheet Body --}}
+    <section class="sheet-body">
+
+        {{!-- Description Tab --}}
+        {{> "aafo.item-description"}}
+
+        {{!-- Details Tab --}}
+        <div class="tab details" data-group="primary" data-tab="details">
+            {{#aafo-concealSection concealDetails}}
+
+            <h3 class="form-header">{{ localize "AAFO.ItemEquipmentDetails" }}</h3>
+
+            {{!-- Equipment Type --}}
+            <div class="form-group">
+                <label>{{ localize "AAFO.ItemEquipmentType" }}</label>
+                <select name="system.type.value">
+                    <option value=""></option>
+                    <optgroup label="{{ localize "AAFO.Armor" }}">
+                        {{selectOptions config.armorTypes selected=system.type.value}}
+                    </optgroup>
+                    {{selectOptions config.miscEquipmentTypes selected=system.type.value}}
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>{{ localize "AAFO.ItemEquipmentBase" }}</label>
+                <select name="system.type.baseItem">
+                    {{selectOptions baseItems selected=system.type.baseItem blank=""}}
+                </select>
+            </div>
+
+            {{#unless system.isMountable}}
+            <div class="form-group input-select">
+                <label>{{localize "AAFO.Attunement"}}</label>
+                <div class="form-fields">
+                    <input type="checkbox" name="system.attuned" {{ checked system.attuned }}
+                           {{ disabled (not system.attunement) }}
+                           data-tooltip="AAFO.Attuned" aria-label="{{ localize 'AAFO.Attuned' }}">
+                    <select name="system.attunement">
+                        {{selectOptions config.attunementTypes selected=system.attunement
+                                        blank=(localize "AAFO.AttunementNone")}}
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>{{localize "AAFO.Proficiency"}}</label>
+                <select name="system.proficient" data-dtype="Number">
+                    {{selectOptions config.weaponAndArmorProficiencyLevels selected=system.proficient
+                                    blank=(localize "AAFO.Automatic")}}
+                </select>
+            </div>
+            {{/unless}}
+
+            {{!-- Equipment Properties --}}
+            <div class="form-group stacked equipment-properties">
+                <label>{{ localize "AAFO.ItemEquipmentProperties" }}</label>
+                {{#each properties}}
+                <label class="checkbox">
+                    <input type="checkbox" name="system.properties.{{ @key }}" {{ checked selected }}>
+                    {{ label }}
+                </label>
+                {{/each}}
+            </div>
+
+            {{!-- Armor Class --}}
+            {{#if (or system.isArmor system.isMountable)}}
+            <div class="form-group">
+                <label>{{ localize "AAFO.ArmorClass" }}</label>
+                <div class="form-fields">
+                    {{ numberInput source.armor.value name="system.armor.value" step="1" }}
+                </div>
+            </div>
+
+            {{#if properties.mgc.selected}}
+            <div class="form-group">
+                <label>{{ localize "AAFO.MagicalBonus" }}</label>
+                <div class="form-fields">
+                    {{ numberInput system.armor.magicalBonus name="system.armor.magicalBonus"
+                       min="0" step="1" placeholder="0" }}
+                </div>
+            </div>
+            {{/if}}
+            {{/if}}
+
+            {{#if system.isArmor}}
+            {{!-- Required Strength --}}
+            <div class="form-group">
+                <label>{{ localize "AAFO.ItemRequiredStr" }}</label>
+                <div class="form-fields">
+                    {{numberInput system.strength name="system.strength" placeholder=(localize "AAFO.None")}}
+                </div>
+            </div>
+            {{/if}}
+
+            {{#if system.isMountable}}
+            {{> "aafo.item-mountable"}}
+            <div class="form-group">
+                <label>{{localize 'AAFO.Speed'}}</label>
+                <div class="form-fields">
+                    {{numberInput system.speed.value name="system.speed.value" placeholder="0"}}
+                    <span class="sep">{{localize 'AAFO.FeetAbbr'}}</span>
+                    <input type="text" name="system.speed.conditions"
+                           value="{{system.speed.conditions}}">
+                </div>
+            </div>
+            {{/if}}
+
+            <h3 class="form-header">{{ localize "AAFO.ItemEquipmentUsage" }}</h3>
+
+            {{!-- Item Activation Template --}}
+            {{> "aafo.item-activation"}}
+
+            <h3 class="form-header">{{ localize "AAFO.ItemEquipmentAction" }}</h3>
+
+            {{!-- Item Action Template --}}
+            {{> "aafo.item-action"}}
+
+            {{/aafo-concealSection}}
+        </div>
+
+        {{!-- Effects Tab --}}
+        <div class="tab effects flexcol" data-group="primary" data-tab="effects">
+            {{> "aafo.active-effects"}}
+        </div>
+    </section>
+</form>

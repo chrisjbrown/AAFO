@@ -1,0 +1,11 @@
+<form autocomplete="off">
+    {{> "aafo.advancement-controls"}}
+    <div class="form-group">
+        <label>{{localize "AAFO.AdvancementHitPointsTitle"}}</label>
+        <input type="number" name="configuration.hp" value="{{configuration.hp}}" data-dtype="Number">
+    </div>
+    <div class="form-group">
+        <label>{{localize "AAFO.AdvancementStaminaPointsTitle"}}</label>
+        <input type="number" name="configuration.sp" value="{{configuration.sp}}" data-dtype="Number">
+    </div>
+</form>

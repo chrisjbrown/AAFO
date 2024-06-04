@@ -1,0 +1,61 @@
+.aafo-flag-high-contrast .aafo2.sheet.actor.character,
+.aafo2.sheet.actor.character.aafo-flag-high-contrast {
+  .sidebar {
+    .card {
+      .stats .lozenges .lozenge .value {
+        text-shadow: 0 0 2px var(--aafo-color-dark);
+        filter: drop-shadow(0 0 2px var(--aafo-color-dark));
+      }
+      .meter.sectioned > .tmp > input::placeholder { color: var(--color-text-light-6); }
+    }
+    .favorites > ul .drop { opacity: .5; }
+  }
+
+  .skills, .tools {
+    > ul > li { border-bottom: var(--aafo-border-dark); }
+    .ability, .passive { color: var(--color-text-dark-primary); }
+  }
+  .saves {
+    > ul > li {
+      --border-style: var(--aafo-border-dark);
+      &:nth-child(odd) { border-inline-end: var(--border-style); }
+    }
+  }
+
+  .pill-lg {
+    &.empty:hover { opacity: 1; }
+    &.texture::before { --gradient-end: color-mix(in oklab, var(--aafo-background-card), transparent 40%); }
+  }
+
+  .ability-scores .ability-score {
+    &::before { background: transparent url("ui/ability-score-tab-hc.svg") no-repeat top center / contain; }
+    .label { color: var(--aafo-color-dark); }
+    .score { color: var(--color-text-light-1); }
+  }
+}
+
+/* ---------------------------------- */
+/*  Light Mode                        */
+/* ---------------------------------- */
+
+.aafo-flag-high-contrast:is(.aafo-theme-light, .theme-dark) .aafo2.sheet.actor.character,
+.aafo2.sheet.actor.character.aafo-flag-high-contrast.aafo-theme-light {
+  .sheet-header { background: var(--aafo-color-maroon); }
+  .sidebar .favorites > h3 { color: var(--aafo-color-dark); }
+  .tab.features .classes .class .level > span { color: var(--aafo-color-dark); }
+}
+
+/* ---------------------------------- */
+/*  Dark Mode                         */
+/* ---------------------------------- */
+
+.aafo-flag-high-contrast:is(.aafo-theme-dark, .theme-dark) .aafo2.sheet.actor.character,
+.aafo2.sheet.actor.character.aafo-flag-high-contrast.aafo-theme-dark {
+  .sheet-header { background: none; }
+  .sidebar .favorites > h3 { color: var(--aafo-color-light); }
+  .tab.features .classes .class .level > span { color: var(--aafo-color-light); }
+  .ability-scores .ability-score {
+    &::before { filter: invert(100%); }
+    .label { color: var(--color-text-light-1); }
+  }
+}

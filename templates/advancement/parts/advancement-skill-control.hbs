@@ -1,0 +1,22 @@
+<li data-score="{{key}}">
+    <label>{{label}}</label>
+    <div style="display:flex">
+        {{#if canAdjust}}
+        <a class="adjustment-button" {{~#if canDecrease}}data-action="decrease"{{else}}aria-disabled="true"{{/if}}>
+            <i class="fas fa-minus"></i>
+        </a>
+        {{/if}}
+        <input name="{{name}}" type="number" min="{{min}}" step="1" value="{{value}}" data-initial="{{initial}}"
+            readonly aria-readonly="true" {{disabled isDisabled}}>
+        {{#if canAdjust}}
+        <a class="adjustment-button" {{~#if canIncrease}} data-action="increase"{{else}} aria-disabled="true"{{/if}}>
+            <i class="fas fa-plus"></i>
+        </a>
+        {{/if}}
+        {{#if showDelta}}
+        <div class="delta">
+            {{#if delta}}{{delta}}{{else}}&nbsp;{{/if}}
+        </div>
+        {{/if}}
+    </div>
+</li>

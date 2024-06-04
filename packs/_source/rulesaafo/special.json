@@ -1,0 +1,316 @@
+{
+  "name": "SPECIAL",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "S.P.E.C.I.A.L.",
+      "type": "rule",
+      "_id": "2kZCguD7mYb1v57u",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>STRENTH</p><p>PERCEPTION</p><p>ENDURANCE</p><p>CHARISMA</p><p>INTELLIGENCE</p><p>AGILITY</p><p>LUCK</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": null,
+        "lastModifiedBy": null
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.2kZCguD7mYb1v57u"
+    },
+    {
+      "sort": 200000,
+      "name": "Stength",
+      "type": "rule",
+      "_id": "0q7rEvWoNqqd5U1z",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>“I guess that explains how you're still alive. You're built  solid as an oak.”  - Doc Mitchell  Raw physical power. A high Strength increases your hit  and damage with melee weapons and unarmed attacks.  It’s also a great scare tactic against anyone. But most  importantly, Strength measures your ability to handle any  weapon and carry your equipment across the wasteland.  All weapons have a Strength requirement, and if you fail to  meet it you’ll have disadvantage to all your attack rolls with  the weapon. If you have a low Strength, opt for lighter  weapons. Having a low Strength will also significantly  reduce your Carry Load, but a high one will allow you to  carry lots of stuff.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655434888,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.0q7rEvWoNqqd5U1z"
+    },
+    {
+      "sort": 300000,
+      "name": "Perception",
+      "type": "rule",
+      "_id": "uPxl9uOeWO8xT8TT",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>\"Stay sharp.”  - Boone  Your senses, your insight into others, your ability to notice,  and your attention to detail. Your body can be strong or  quick, but it’s nothing if you don’t take notice. Perception is  also a measurement of how quick you can act under  pressure. You’ll act first in combat with a high perception,  and heal others easier when you know what’s important  first. Damage and attack rolls with Energy Weapons are  measured by Perception, as with their auto-aiming and  wide beam-like capabilities, you only need to know where  your target is to hit them. Perception also affects your  range with all ranged weapons. A high Perception can  allow you to shoot far, while a low one will decrease your  range.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655414942,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.uPxl9uOeWO8xT8TT"
+    },
+    {
+      "sort": 400000,
+      "name": "Endurance",
+      "type": "rule",
+      "_id": "NJzZnHjYTMfvx0UR",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>“I survived because the fire inside me burned brighter than  the fire around me”  - Joshua Graham  Your physical toughness, your ability to hold out.  Characters with high endurance often never give up.  Gritting their teeth with their power of determination to  survive. This allows you to know more about the hardships  of the wasteland and how to use them to your best  abilities. A high Endurance gives you more hit points  allowing you to survive longer. Your Endurance also  affects your Healing Rate and Radiation DC. Having a low  Endurance will make you more susceptible to the negative  effects of radiation and even gets you closer to death in  the wasteland</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655385328,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.NJzZnHjYTMfvx0UR"
+    },
+    {
+      "sort": 500000,
+      "name": "Charisma",
+      "type": "rule",
+      "_id": "4rWlS9gfiGrkr9KD",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>“You have a tongue of purest silver, Chosen One. Your  skill with words will open many doors for you.”  - Cameron  Your force of personality, everything that makes you, you.  Charisma measures your ability to understand others,  while also being a master of communication. Charisma  makes for great leaders and powerful negotiators. A high  Charisma also increases your Party Nerve, which  increases your party’s perseverance by gaining temporary  stamina points and a bonus to Death Saves.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655358789,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.4rWlS9gfiGrkr9KD"
+    },
+    {
+      "sort": 600000,
+      "name": "Intelligence",
+      "type": "rule",
+      "_id": "x2BBRe7oeGHB9CWI",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>\"But if I adjust the magnetic field, perhaps the resulting  change in wavelength will- excuse me, I'm merely thinking  out loud.\"  - Brotherhood of Steel Scribe  Reasoning, knowledge, and memory. Intelligence  measures sheer brain power and your know-how of  everything. Computers, biology, cosmology, physics,  equations, mechanics, engineering, and anything  Scientific related is measured by Intelligence. A high  Intelligence score will net you more skill points when you  level up, while a lower Intelligence gives you less. A high  Intelligence also allows you to craft more items like  weapons, mods, and armor upgrades.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655335688,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.x2BBRe7oeGHB9CWI"
+    },
+    {
+      "sort": 700000,
+      "name": "Agility",
+      "type": "rule",
+      "_id": "IF1Wi7XLSSVVe3oP",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Didn't even hear you come up the ramp. You don't  broadcast your movements, I like that.\"  - Ghost  Quickness and dexterity. Agility measures your character's  speed and accuracy. Your Agility also measures your  ability to dodge and stay focused in combat, granting you  your SP. Your ability to move quietly and act  inconspicuously is measured by Agility. Attack and  damage rolls with pistols, shotguns, rifles, big guns, and  SMGs are all modified by your Agility. Having a high Agility  score grants you more AP, allowing you to do more in a  turn during combat, while a low Agility will give you less.  Action Points. Your action points are a measurement  of how much you can do in one round of combat. Anything  you do in combat costs a certain amount of action points,  3 often being the lowest and 6 being the most. If you do  not have enough action points to spend on an action, you  do not perform the action. You have a number of action  points equal to 10 + your Agility modifier. You can only  ever have a maximum of 15 action points. You regain all  your spent action points at the start of each of your turns.  If you end your turn and you have unspent action points,  you recycle half those points (rounded down) at the start  of your next turn.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655307284,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.IF1Wi7XLSSVVe3oP"
+    },
+    {
+      "sort": 800000,
+      "name": "Luck",
+      "type": "rule",
+      "_id": "WKAbq1o67ZKGvgYT",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>\"They asked me how well I understood theoretical physics.  I said I had a theoretical degree in physics. They said  welcome aboard.\"  - Fantastic  Fate, Karma, and Fortune. It’s difficult to measure one’s  Luck, but in the wasteland the universe itself judges  individuals by their Luck. A general catch-all skill, your  Luck can affect almost everything. Coming back from the  dead relies on your Luck as you add your modifier to  Death Saves. Finding loot, equipment, or anything in the  wasteland is measured by your Luck. Having a high Luck  score grants a bonus to all your Skills, and raises your  chance to critically hit on all weapons.</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.324",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": null,
+        "modifiedTime": 1716655193977,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!zeSPClOtaMa6ssoT.WKAbq1o67ZKGvgYT"
+    }
+  ],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "aafo": {
+      "type": "chapter",
+      "position": 1
+    }
+  },
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.324",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1716643635881,
+    "modifiedTime": 1716643635881,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "zeSPClOtaMa6ssoT",
+  "sort": 0,
+  "_key": "!journal!zeSPClOtaMa6ssoT"
+}
