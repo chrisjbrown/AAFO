@@ -81,7 +81,7 @@ export default class Advancement extends BaseAdvancement {
       title: game.i18n.localize("AAFO.AdvancementTitle"),
       hint: "",
       multiLevel: false,
-      validItemTypes: new Set(["background", "class", "race", "subclass"]),
+      validItemTypes: new Set(["background", "class", "race", "subclass", "perk"]),
       apps: {
         config: AdvancementConfig,
         flow: AdvancementFlow

@@ -115,6 +115,15 @@
       "flags": {}
     },
     {
+      "name": "character",
+      "label": "Character",
+      "system": "aafo",
+      "path": "packs/character",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "races",
       "label": "Races (SRD)",
       "system": "aafo",
@@ -221,6 +230,7 @@
           "sorting": "m",
           "color": "#b72c1f",
           "packs": [
+            "character",
             "perks"
           ]
         }
