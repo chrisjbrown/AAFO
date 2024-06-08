@@ -530,6 +530,25 @@ export default class AdvancementManager extends Application {
   /*  Process                                     */
   /* -------------------------------------------- */
 
+  async addNewFlowItem(originalItem, newItemData, type) {
+    // Prepare data for adding to clone
+    const clonedItem = foundry.utils.deepClone(newItemData);
+    let targetLevel = this.clone.system?.details?.level > 0 ? this.clone.system.details.level : 1;
+
+    const advancement = clonedItem?.system.advancement;
+    advancement.forEach((a) => {
+      a.level = targetLevel;
+      originalItem.createAdvancement(
+        a.type, {...a._source, level: targetLevel}, { source: true }
+      );
+      originalItem.advancement.byId[a._id] = a;
+      originalItem.advancement.byType[a.type].push(a);
+      originalItem.advancement.byLevel[targetLevel].push(a);
+      const flow = new a.constructor.metadata.apps.flow(originalItem, a.id, targetLevel)
+      this.steps.splice(this.steps.length - 1, 0, { type: type, flow, automatic: type === "reverse" })
+    });
+  }
+
   /**
    * Advance through the steps until one requiring user interaction is encountered.
    * @param {Event} [event]  Triggering click event if one occurred.
@@ -551,6 +570,18 @@ export default class AdvancementManager extends Application {
         else if ( type === "restore" ) await flow.advancement.restore(flow.level, flow.retainedData);
         else if ( type === "reverse" ) await flow.retainData(await flow.advancement.reverse(flow.level));
         else if ( flow ) await flow._updateObject(event, flow._getSubmitData());
+
+        if (flow && flow.advancement?.type === "ItemChoice" && flow.selected.size > 0) {
+          for (let selected of flow?.selected) {
+            const source = await fromUuid(selected);
+            if ( !source ) return;
+            const itemData =  source.clone({
+              _id: foundry.utils.randomID(),
+              "flags.aafo.sourceId": selected,
+            });
+            this.addNewFlowItem(flow.item, itemData, type)
+          }
+        }
 
         this._stepIndex++;
 
