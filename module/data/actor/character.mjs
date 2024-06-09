@@ -331,7 +331,7 @@ export default class CharacterData extends CreatureTemplate {
         .map(c => c.advancement.byType.HitPoints)?.[0]
       spOptions.bonus = (simplifyBonus(this.attributes.sp.bonuses.level, rollData) * this.details.level)
         + simplifyBonus(this.attributes.sp.bonuses.overall, rollData);
-      spOptions.mod = this.abilities[CONFIG.AAFO.defaultAbilities.staminaPoints ?? "agi"]?.mod ?? 0;
+      spOptions.mod = this.abilities[CONFIG.AAFO.defaultAbilities.staminaPoints ?? "end"]?.mod ?? 0;
     }
     AttributesFields.prepareStaminaPoints.call(this, this.attributes.sp, spOptions);
 
@@ -339,10 +339,10 @@ export default class CharacterData extends CreatureTemplate {
     const apOptions = {};
     if ( this.attributes.ap.max === null ) {
       apOptions.advancement = Object.values(this.parent.classes)
-        .map(c => c.advancement.byType.ActionPoints)?.[0]
+        .map(c => c.advancement.byType.HitPoints)?.[0]
       apOptions.bonus = (simplifyBonus(this.attributes.ap.bonuses.level, rollData) * this.details.level)
         + simplifyBonus(this.attributes.ap.bonuses.overall, rollData);
-      apOptions.mod = this.abilities[CONFIG.AAFO.defaultAbilities.actionPoints ?? "con"]?.mod ?? 0;
+      apOptions.mod = this.abilities[CONFIG.AAFO.defaultAbilities.actionPoints ?? "agi"]?.mod ?? 0;
     }
     AttributesFields.prepareActionPoints.call(this, this.attributes.ap, apOptions);
 

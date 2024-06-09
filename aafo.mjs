@@ -351,9 +351,9 @@ Hooks.once("setup", function() {
   registerDeferredSettings();
 
   // Apply table of contents compendium style if specified in flags
-  game.packs
-    .filter(p => p.metadata.flags?.display === "table-of-contents")
-    .forEach(p => p.applicationClass = applications.journal.TableOfContentsCompendium);
+  // game.packs
+  //   .filter(p => p.metadata.flags?.display === "table-of-contents")
+  //   .forEach(p => p.applicationClass = applications.journal.TableOfContentsCompendium);
 
   // Apply custom item compendium
   game.packs.filter(p => p.metadata.type === "Item")

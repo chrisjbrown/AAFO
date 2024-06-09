@@ -1,0 +1,203 @@
+{
+  "name": "Races",
+  "_id": "48Fr0Y65mxj2uFI8",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Human",
+      "type": "text",
+      "_id": "vFzkCUUINyz1GAtY",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>Human</p><p>“What a contradiction a human is. To be lacking in so many  capabilities, but being blessed with such a tapestry of emotions.”  - Curie. </p><p></p><p>“Humans are the dominant species of Earth. In the  post–apocalyptic age, \"human\" is more specifically used to  denote those that have been more-or-less unaffected by  radiation as opposed to mutants like ghouls and super  mutants, even though said mutant types originate from  humans. Non–mutated humans are sometimes called  normals, smoothskins, humies, or bleeders by their mutant  counterparts.  Despite the existence of various mutations, humans are  still the most common humanoid creatures on Earth.  Post-nuclear humans, as a direct result of the radiation  and exposition to the Forced Evolutionary Virus and some  other biochemical agents released into the environment  during and after the Great War, exhibit more diversity,  primarily in genetic structure. The aforementioned factors  have resulted in an increased rate of mutations in humans,  although very few of these result in phenotypic changes.  Most of these changes are non-lethal, non-damaging  variations in the human DNA that simply increase the  gene pool variety. Also, humans with minor mutations, like  additional toes, skin lesions due to TDC infection,  permanent red eyes, permanent varicose veins, or  complete lack of hair are still considered to be humans.” </p><p> - Excerpt from the “Human” page written on the  Fallout Fandom Wiki.  </p><p></p><p>Age.</p><p>Humans reach adulthood in their late teens and  live less than a century. Though, those who live this long  are far and few between in the wasteland.  </p><p></p><p>Size.</p><p>Humans vary widely in height and build, your size  is Medium or Small.  </p><p></p><p>Variant Human Traits.</p><p>If your GM allows it, you can optionally start with these  variant abilities. </p><p></p><p>Resourceful. You gain one extra Karma Cap (see  page 8) that you can use each game.  Unexposed. You have disadvantage on all Radiation  and Addiction checks.</p><p></p><p>Variant: Gen 3 Synth.</p><p>Oftentimes, Humans in the wasteland are actually  synthetic machines that are indistinguishable from a  regular human created by a secret cabal of scientists  called “The Institute”. This variant option provides no  abilities or statistical change. However it can provide a  psychological or narrative one. Work with your GM on how  this potentiality could affect your character.  Alternatively, when creating your human character; roll a  d20. On a 20, your character is secretly a Gen 3 Synth</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.325",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": 1717937706880,
+        "modifiedTime": 1717937940180,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!48Fr0Y65mxj2uFI8.vFzkCUUINyz1GAtY"
+    },
+    {
+      "sort": 200000,
+      "name": "Ghoul",
+      "type": "text",
+      "_id": "WAaZqU6MW0Pn4vyM",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>\"The future. Survival anywhere. We surpass the norms.\"  - Set.  </p><p></p><p>Ghouls are mutated humans affected by the phenomenon  of ghoulification. Despite their zombie-like appearance, the  flesh of ghouls is not actually rotten. Intense and  prolonged radiation has ravaged their skin, much of their  flesh, and in some cases many of their ligaments. Despite  their infertility and in some cases mental deterioration,  they have greatly extended overall lifespans and are  immune to (and sometimes even healed by) background  radiation and/or nuclear fallout.  Ghouls typically can live well in human societies, but they  are nevertheless a minority. There do exist Ghoul  communities and cities. The Necropolis was once one,  before it was partially destroyed by Super Mutants. Many  pre-war farming cities in California including Broken Hills,  Dayglow, and Gecko.  Due to their near immortal lifespan, Ghouls often take on  entire new personas every century or so. They learn new  skills and inherit an entirely different identity until moving  on to the next.  - Summarized excerpt from the “Ghoul” page  written on the Fallout Fandom Wiki.  </p><p>Age.</p><p>Ghouls are nearly immortal, their lifespan is  unknown. Some Ghouls have survived from even before  the Great War over 200 years ago.  </p><p>Size.</p><p>Ghouls vary widely in height and build, your size  is Medium or Small. </p><p>Evolution. </p><p>You cannot gain levels of radiation and you  are immune to radiation damage. Additionally, you gain no  Irradiated levels from consuming food or water.  </p><p>Resilient Anatomy.</p><p>You are resistant to poison  damage. Any stamina points you would gain from  consuming food, drinks, or chems is halved (rounded  down). Any hit points you would gain from stimpaks is  halved (rounded down). You cannot gain hit points from  healing powder. Syringes that aren’t ‘loaders’ have no  effect on you. Additionally, whenever you take damage  from the bleeding condition, you take half as much.  Variant Ghoul Traits.  If your GM allows it, you can optionally start with these  variant abilities.  Many Roads Walked. You gain a +2 in all skills and  you gain an extra perk at 1st Level.  </p><p>Old Bones. </p><p>You are immune to poison damage and  you gain the Stitched Together perk.  </p><p>Half Life. </p><p>Your mind slips each day, ghoulification has  taken an immense toll on you and you feel yourself slowly  becoming feral. When you reach Level 15, you are fully  consumed by ghoulification, your mind is no longer your  own, and your character is controlled by the GM</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.325",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": 1717937957779,
+        "modifiedTime": 1717937957779,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!48Fr0Y65mxj2uFI8.WAaZqU6MW0Pn4vyM"
+    },
+    {
+      "sort": 300000,
+      "name": "Gen-2 Synth",
+      "type": "text",
+      "_id": "ixTaPHmb8o0edk3Z",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>“All the parts, minus a few red blood cells.”  - Nick Valentine. </p><p>Synth (short for synthetic humanoids, also called androids  or artificial humans) is a common term used to refer to  biological and mechanical robots manufactured within the  Institute laboratories.  Synths in extremely rare cases can escape the clutches of  the Institute and live their own lives. Sometimes even  having their memory erased and filled with new ones to  live out their lives. Gen 2 Synths however are a different  story, they are much more clear to be androids with plastic  like skin, exposed insides, and metal pieces.  The most common variant of mechanical synth. Gen-2s  still possess limited A.I. and superficially resemble a  mannequin more than a human.  - Summarized excerpt from the “Synth” page written  on the Fallout Fandom Wiki.  Age. Gen-2 Synths can live hundreds of years before  their inorganic materials begin to corrode and their  programming deteriorates. However, a Synth who keeps  consistent repairs is nigh immortal.  </p><p>Size.</p><p>Gen-2 Synths vary widely in height and build,  your size is Medium or Small.  Inorganic Body. You are immune to radiation and  poison. You gain no effects from Chems, Drinks or Food.  Additionally you have no need to breathe, sleep, eat, or  drink.  </p><p></p><p>Variant Gen-2 Synth Traits. </p><p>If your GM allows it, you can optionally start with these  variant abilities.  </p><p></p><p>Brittle Body. </p><p>Whenever a creature makes a targeted  attack against you, you gain two limb conditions instead of  one. Additionally you are vulnerable to electricity damage.  Software and Hardware Upgrades. Whenever you  gain a perk, you are considered a Robot for perk  requirements.  Artificial Intelligence Algorithms. Whenever you gain  skill points, you gain 1 more</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.325",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": 1717938113768,
+        "modifiedTime": 1717938179507,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!48Fr0Y65mxj2uFI8.ixTaPHmb8o0edk3Z"
+    },
+    {
+      "sort": 400000,
+      "name": "Robot",
+      "type": "text",
+      "_id": "cXo3U8KgN7f5iko9",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>“I spent the first ten years trying to keep the floors waxed,  but nothing gets out nuclear fallout from vinyl wood.  Nothing!”  - Codsworth.  </p><p></p><p>“A robot is a machine that is capable of autonomously  completing tasks. Depending upon the robot, these tasks  may be simple or complex and may require little human  intervention or complete oversight. Robots had been  constructed by pre-War society to fill all niches and  occupations. From general-purpose utility droids to  full-fledged military battle machines, robots could be found  in almost any environment and function. Some of the  robots in the Fallout universe will attack immediately but  some will aid in battle or remain ambivalent.”  - Excerpt from the “Robot” page written on the  Fallout Fandom Wiki.  Age. Robots can live hundreds of years before their  inorganic materials begin to corrode and their  programming deteriorates. However, a Robot who keeps  consistent repairs is nigh immortal.  Inorganic Body. You cannot gain radiation levels, you  are immune to radiation damage and poison damage. You  cannot gain levels of bleeding. You gain no effects from  Chems, Drinks or Food. Additionally, you have no need to  breathe, sleep, eat, or drink.  Size. While there are many types of Robots, most were  built to maintain a similar size to humans. Handy’s are  about 2 and a half feet to 3 and a half feet in height but  hover 2 to 3 feet off the ground. Protectrons rarely were  built taller than 5 feet. And Robobrains typically sit around  5 and a half feet. Regardless, your size is medium.  Severed Limbs. Luckily for most robots, reattaching  limbs is commonplace when they break or fall off. If any of  your limbs are severed, you do not go into shock and they  can be reattached with 3 steel and 1 circuitry junk item.  When you or a creature reattaches a limb, it takes a  number of minutes equal to 10 - their or your crafting skill  bonus. If the amount of time is reduced to 0, it takes 6 AP  to reattach the limb instead.  Armor and Weapons. You can use armor and  weapons just as any other race would. If your robot  sub-type grants you a weapon, you can upgrade and  modify this weapon just like any other weapon. However,  you cannot use power armor.  </p><p>Robot Type. There are three types of robot that you  can choose from. Handy, Protectron, and Robobrain.  </p><p>Handy.  </p><p>“The Handy robot is a maintenance and construction robot  with multiple, multi-jointed appendages, which levitates  thanks to its powerful jet-powered engine. They were  generally in use as butlers, maintenance workers and  sometimes also employed as guards before the Great  War.”  - Excerpt from the “Mister Handy” page written on  the Fallout Fandom Wiki.  While oftentimes their name suggests a gender role,  “Mister Handy” or “Miss Handy” is simply a name to  describe the robot's model. Handy’s have multitudes of  voices, personalities, and names and can present  themselves as any gender.  Limbs and Targeted Attacks. Handy’s have a less  human shape to them than other robots, floating off the  ground with three appendages and three eyes attached to  a large round core. You have three arms, three eyes, and  can have up to three hands if you choose to have three  Grippers in the Incredible Multi-Talented Appliance section  below. You do not have a head, groin, or legs that can be  targeted by targeted attacks or severed. Instead; targeted  attacks to your eyes cost 2 less AP and creatures can  target your jet engine. The jet engine functions exactly the  same as a targeted attack to the legs, except the attack  costs 2 more AP. If your jet engine is severed, you fall  prone and cannot move until it is reattached.  Fuel. You require fuel to continue to operate. Every  week, 7 days, or 168 hours; you can spend 6 AP to fill  your tank with a gallon of fuel or six oil junk items which  are consumed upon use. If you fail to consume a gallon of  fuel after the week, you must succeed a DC 12 Endurance  check for each hour past 168. For each successful check,  the DC increases by 2. On a fail, you become unconscious  until another creature fills your tank with fuel. Alternatively,  you can load a fusion core into your chassis. If you do, you  can operate for 30 days without requiring fuel.  Jet Engine. You hover a few feet off the ground while  active and moving. You don't trigger any floor based traps  or activated effects. However, if you are knocked prone,  become stunned, or fall unconscious; you fall to the  ground.  Incredible Multi-Talented Appliance! Handy’s are  built with three special tools that are attached and built  into three of their arms. These tools and weapons can be  modified like any other weapon, only require one hand to  use, and do not cost AP to equip or stow. Additionally, they  cannot be detached from you unless the arm that the tool  or weapon is attached to is severed. Choose one tool or  weapon from the following list that is attached to your arm.  </p><p></p><p>Buzz Saw. A mechanical saw housed in a metal frame  used to cut wood, food, bodies, or debris. Melee Weapon.  12  5 Action Points. 1d8 slashing. Critical Hit: 20, x2, applies  bleeding. Special Properties: Cleave, Durable. (See page  47 for details on these properties).  Clippers. A large, sharp set of clippers for wiring,  gardening, or opening boxes. Melee Weapon. 3 Action  Points. 1d4 piercing. Critical Hit: 19, 20. 1d4 piercing.  Special Properties: Dismember, Durable. (See page 47 for  details on these properties).  </p><p>Drill.</p><p>This drill has interchanging bits used for screws,  nuts, bolts, and pilot holes. Melee Weapon. 6 Action  Points. 1d8 slashing. Critical Hit: 20, 2d8 slashing. Special  Properties: Durable, Mangle. (See page 47 for details on  these properties).  </p><p>Gripper.</p><p>The Gripper is two finger-like appendages that  can grab, twist, operate, use weapons, and hold items.  Operating at similar efficiency to a human hand. If you do  not have at least two of these tools, you effectively only  have one hand. (This affects some weapons which have  the two handed, unwieldy, or kickback special properties  on page 55)  Torch. This kitchen tool emits a flame with an adjustable  nozzle for cooking, flambéing, taking care of pesky bug  nests, or lighting candles. Ranged Weapon, 10 ft. line. 5  Action Points. 1d10 fire. Ammo: fuel, 5 rounds. Special  Properties: Area of Effect, Durable, Incendiary (see page  56 for details on these properties).  </p><p></p><p>Protectron. </p><p>Protectrons have a glass dome on top of their heads that  acts as an ocular lens that allows the Protectron to scan  its surroundings and act accordingly. Although Protectrons  are rather slow and ponderous, their upper body can  swivel up to about 90 degrees to either side before having  to step into a different position, which means that they can  easily keep track of their target.  - Excerpt from the “Protectron” page written on the  Fallout Fandom Wiki.  Limbs and Targeted Attacks. Protectrons, while still a  robotic oddity, have a human-like shape and appendages.  You have two arms, two legs, two hands, two feet, a head,  and a torso. However, you do not have eyes or a groin  that can be targeted by normal targeted attacks or  severed.  Reinforced Plating. Your DT increases by 1 even if  you aren’t wearing armor.  Slow. Protectrons can only spend a maximum of 6 AP  on movement during their turns.  Protect and Serve. Protectrons are built with a special  tool that is attached and built into one of their arms. These  tools and weapons can be modified like any other  weapon, only require one hand to use, and do not cost AP  to equip or stow. Additionally, they cannot be detached  from you unless the arm that the tool or weapon is  attached to is severed. </p><p>Choose one tool or weapon from  the following list that is attached to your arm. </p><p>Taser.</p><p>Melee Weapon. 4 action points. 2d8 electricity  damage. Critical Hit: 20, x2 applies dazed. Special  Properties: Durable. (See page 47 for details on these  properties).  Laser. Ranged Weapon, Range: x10/x20. 4 Action Points.  1d8 laser. Critical Hit: 20, x2, applies burning. Ammo:  Fusion cell, 30 rounds. Special Properties: Durable.  Semi-Automatic. (See page 56 for details on these  properties).  </p><p>Defibrillator.</p><p>Unarmed Attack. 6 AP. 2d8 electricity  damage. Critical Hit: 20, 1d8. Special Properties: Durable,  Revitalizing. (See page 47 for details on these properties).  Cryo Spray. Ranged Weapon, 20 ft. cone. 5 AP. 2d4 cold.  Ammo: Cryo cell, 3 rounds. Special Properties: Area of  Effect, Durable, Freezing, Slow. (See page 56 for details  on these properties).  Nail Gun. Ranged Weapon, Range: x3/x10. 6 AP. 1  piercing per attack. Critical Hit: 20, 10 piercing. Ammo:  Nails, 90 rounds. Special Properties: Automatic: 2.  Durable (See page 56 for details on these properties).  </p><p>Robobrain. </p><p>“The Robobrain was designed from the ground up as a  multirole platform for use by military and civilian clients.  They are more flexible and powerful than robots due to the  fact that their central control and processing unit is an  actual brain, rather than an artificial facsimile. Coupled  with a robust, all-terrain tracked chassis and powerful  armaments, the Robobrain was on the forefront of a new  revolution in combat robotics.”  - Excerpt from the “Robobrain” page written on the  Fallout Fandom Wiki.  </p><p></p><p>Limbs and Targeted Attacks.</p><p>Robobrains have a  humanoid shape and appendages. You have two arms,  two hands, a head, and a torso. However, you do not have  legs, feet, eyes, or a groin that can be targeted by normal  targeted attacks or severed. Instead, creatures can target  your all terrain rollers. The rollers function exactly the  same as a targeted attack to the legs except they cannot  be severed.  All Terrain Rollers. You do not have to spend extra  AP to move through difficult terrain.  </p><p>NeuroTransmitters.</p><p>You are vulnerable to electricity  damage. Additionally, when you take damage from a  targeted attack to the head; you gain two conditions  instead of one</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.325",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": 1717938224358,
+        "modifiedTime": 1717938385730,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!48Fr0Y65mxj2uFI8.cXo3U8KgN7f5iko9"
+    },
+    {
+      "sort": 500000,
+      "name": "Super Mutant",
+      "type": "text",
+      "_id": "ChgDiPJmvEgQgL0m",
+      "system": {},
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<p>“Never really hated humans. We just had a better way.  These new governments, they think they've got all the  answers. Blah, blah. Been there, seen that, got the scars.”  - Marcus.  </p><p></p><p>“Super mutants are genetically enhanced humans who  were created to be superior in every way to a typical  human. Originally planned to be super soldiers, the first  Super mutants were created by exposure to the Forced  Evolutionary Virus II from the vats of the Mariposa Military  Base in California. Other strains of Super mutants are  found throughout the wasteland created from various  sources, often varying in size and intelligence. Regardless  of their origin, all Super mutants were created by way of  the Forced Evolutionary Virus having mutated from  humans. With the creation of the FEV-II strain, scientists  were able to create powerful super-soldiers, exhibiting  superior physical prowess, resistance to combat damage,  aging, and disease, as well as a negligible loss of  intelligence and inevitable infertility.  People who were turned into mutants via would have their  skin turn a shade of green, yellow, or olive with their entire  body growing huge with more muscle mass being added  by the Virus. But those who were turned into mutants had  only fleeting memories of their human lives. They could  not breed, as the FEV turned them sterile, thus limiting the  generations of mutants. A strain of mutants known as  night-kin had their skin change to a gray-purple color after  long exposure to stealth boys.”  - Excerpt from the “Super Mutant” page written on  the Fallout Fandom Wiki.  </p><p>Age.</p><p>Super mutants are nearly immortal, their lifespan  is unknown. Some have lived for hundreds of years.  Size.</p><p>Super mutants rarely vary in height and build, but  they can range from 7 to 9 feet in height. Your size is  Medium. Due to the specifics required for it, you cannot  use power armor unless it is specifically modded to your  body type.  </p><p>Evolution.</p><p>You cannot gain levels of radiation and you  are immune to radiation damage. Additionally, you gain no  Irradiated levels from consuming food or water.  </p><p>Superior Strength.</p><p>Due to your increased mass in  muscle, your Strength score increases by 1 and cannot be  lower than 6. Additionally your Carry Load is increased by  40.  </p><p>Mass Exertion.</p><p>The amount of required food and  water you need each day with gaining levels of hunger  and dehydration is doubled.  </p><p>Bulky.</p><p>Super mutants have many advantages but  precision does not come easy, whenever your weapons or  armor would gain a level of decay, they gain an additional  one.  </p><p>Variant Super mutant Traits. </p><p>If your GM allows it, you can optionally start with one of  these variant abilities which replaces the Superior  Strength trait. </p><p>Defective Strain.</p><p>Due to the various types of  experimentation performed on many humans, when you  became a Super mutant; your body was empowered but  your mind weakened. Your Strength and Endurance ability  scores both increase by 2 and your Carry Load is  increased by 40. However, your Intelligence ability score is  reduced by 2 and cannot be raised higher than a 3. </p><p>Nightkin.</p><p>Nightkin once served in the Master’s army,  but now wanders the wasteland. They very often suffer  from severe psychological damage, caused by prolonged  Stealth Boy use. Your Strength score increases by 1 and  cannot be lower than 6. Additionally your Carry Load is  increased by 40. You also gain an ability called Stealth  field. You can spend 3 action points on your turn to turn  you and everything you are carrying invisible. This ability  lasts for 1 minute. Each time you use this ability after the  first use each day, your Perception ability score  temporarily decreases by 1 for 24 hours (to a minimum of  1). Your Perception ability score being decreased in this  way does not limit you in using or choosing perks that  have a Perception ability score requirement. (For quick  reference, your Perception score affects your Breach,  Energy Weapons, Explosive, and Medicine skill checks.  As well as your Combat Sequence bonus and range with  weapons).</p>"
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_stats": {
+        "compendiumSource": null,
+        "duplicateSource": null,
+        "coreVersion": "12.325",
+        "systemId": "aafo",
+        "systemVersion": "0.0.1",
+        "createdTime": 1717938399388,
+        "modifiedTime": 1717938544732,
+        "lastModifiedBy": "aafobuilder00000"
+      },
+      "_key": "!journal.pages!48Fr0Y65mxj2uFI8.ChgDiPJmvEgQgL0m"
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717937699487,
+    "modifiedTime": 1717937699487,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!journal!48Fr0Y65mxj2uFI8"
+}

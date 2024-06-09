@@ -521,7 +521,7 @@ export default class ActorSheet5eCharacter2 extends ActorSheet5eCharacter {
     // Add extra categories for features grouping.
     Object.values(this.actor.classes ?? {}).sort((a, b) => b.system.levels - a.system.levels).forEach(cls => {
       context.features.push({
-        label: game.i18n.format("AAFO.FeaturesClass", { class: cls.name }),
+        label: game.i18n.format("AAFO.CharacterPerks", { class: cls.name }),
         items: [],
         dataset: { type: cls.identifier }
       });

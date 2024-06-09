@@ -282,7 +282,7 @@ export default class AttributesFields {
    * @this {ActorDataModel}
    */
   static prepareActionPoints(ap, { advancement=[], mod=0, bonus=0 }={}) {
-    const base = advancement.reduce((total, advancement) => total + advancement.getAdjustedTotal(mod), 0);
+    const base = 10;
     ap.max = (ap.max ?? 0) + base + bonus;
 
     ap.effectiveMax = ap.max + (ap.tempmax ?? 0);
