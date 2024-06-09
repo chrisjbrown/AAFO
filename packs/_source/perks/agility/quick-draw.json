@@ -1,0 +1,100 @@
+{
+  "folder": "hMC5Hx28Xq4VMdqS",
+  "name": "Quick Draw",
+  "type": "perk",
+  "_id": "vLC3Z8G4hiRTOHzk",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Agility 4.</p><p>Whenever you spend action points to equip or stow an  item, it costs 2 less to a minimum of 1.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717921718433,
+    "modifiedTime": 1717921731030,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!vLC3Z8G4hiRTOHzk"
+}

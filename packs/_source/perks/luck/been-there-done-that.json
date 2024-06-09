@@ -1,0 +1,100 @@
+{
+  "folder": "wI8mQuLGDRRzl4XM",
+  "name": "Been There, Done That.",
+  "type": "perk",
+  "_id": "fdvI52lwrGtAd6sK",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Luck 9.</p><p>Whenever you or an ally within 100 feet of you makes a  Luck ability check, it is increased by 3. Additionally,  whenever you gain XP you gain a bonus equal to a 5d10 +  every player character Luck scored added together, then  halved.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717934067976,
+    "modifiedTime": 1717934082086,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!fdvI52lwrGtAd6sK"
+}

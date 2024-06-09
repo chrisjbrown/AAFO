@@ -1,0 +1,100 @@
+{
+  "folder": "hMC5Hx28Xq4VMdqS",
+  "name": "Nimble Dash",
+  "type": "perk",
+  "_id": "MH6HcevqbKkjJJph",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Agility 5.</p><p>Whenever you spend action points on your turn to sprint,  you do not stop your movement when small barriers block  you. Instead you can spend 10 feet of that movement to  vault over or slide under the barrier. Additionally, if you  spent all of your action points on a turn to sprint, all attack  rolls made against you have disadvantage until the start of  your next turn</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717921882747,
+    "modifiedTime": 1717921898015,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!MH6HcevqbKkjJJph"
+}

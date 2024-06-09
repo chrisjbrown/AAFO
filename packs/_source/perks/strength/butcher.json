@@ -1,0 +1,100 @@
+{
+  "name": "Butcher",
+  "type": "perk",
+  "_id": "ldW3idi4yb0m3NL5",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Strength 5.</p><p>You're hackin', whackin', and choppin' that meat!  Whenever you roll damage from an attack roll made with a  melee weapon, add 2 to the result. Additionally, if you  make a targeted attack with a bladed melee weapon to a  creature's arms or legs and deal more than double their  level in points of damage to the creature's hit points, you  sever the limb!</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "zEfrUM1XVzAjNeZO",
+  "sort": 200000,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717864685288,
+    "modifiedTime": 1717866525703,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!ldW3idi4yb0m3NL5"
+}

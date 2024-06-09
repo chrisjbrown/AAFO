@@ -2193,7 +2193,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @returns {Promise<RestResult>}       A Promise which resolves once the short rest workflow has completed.
    */
   async levelUp() {
-    const uuid = "Compendium.aafo.character.Item.VPAkHUyElG8speNc"
+    const uuid = "Compendium.aafo.character.Item.gQiHh04adhvRbT8u"
     const source = await fromUuid(uuid);
     if ( !source ) return null;
     const itemData =  source.clone({

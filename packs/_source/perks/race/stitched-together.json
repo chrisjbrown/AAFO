@@ -1,0 +1,100 @@
+{
+  "folder": "StUeBTC4dSo7b4WU",
+  "name": "Stitched Together",
+  "type": "perk",
+  "_id": "v0ThAi4zKxIw9wmJ",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Ghoul.</p><p>Your body has seen the worst the wasteland has to offer. If  you ever lose any of your limbs, besides your head, you  can spend 5 minutes reattaching the limb so long as you  have a first aid kit and you still have the limb you lost.  Additionally, you can spend 1 minute to heal a number of  hit points equal to your healing rate. Once you heal in this  way, you cannot do it again until you rest for at least 6  hours</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717934612861,
+    "modifiedTime": 1717934628030,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!v0ThAi4zKxIw9wmJ"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "General",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "6xzxSjGNSaicHjyp",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717866503567,
+    "modifiedTime": 1717866503567,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!folders!6xzxSjGNSaicHjyp"
+}

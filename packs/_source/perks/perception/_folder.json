@@ -1,0 +1,22 @@
+{
+  "name": "Perception",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "i01gAOhXgG2QhtXj",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717866517523,
+    "modifiedTime": 1717866517523,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!folders!i01gAOhXgG2QhtXj"
+}

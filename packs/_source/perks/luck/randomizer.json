@@ -1,0 +1,100 @@
+{
+  "folder": "wI8mQuLGDRRzl4XM",
+  "name": "Randomizer",
+  "type": "perk",
+  "_id": "b5xUGL1qvEqtEetX",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Luck 6.</p><p>Whenever you craft or repair an item, you can randomly  choose one of the required materials, the required material  is reduced by an amount equal to your Luck ability  modifier to a minimum of 1. The required material is also  replaced by a randomly chosen junk material. Additionally,  whenever you consume a food, drink, or chem, you can  choose to roll a Luck ability check with the DC equal to 15,  if you succeed; one random food, drink, or chem property  is added to the consumed food, drink, or chem.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717933875936,
+    "modifiedTime": 1717933889767,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!b5xUGL1qvEqtEetX"
+}

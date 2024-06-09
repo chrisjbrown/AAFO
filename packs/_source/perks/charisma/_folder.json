@@ -1,0 +1,22 @@
+{
+  "name": "Charisma",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "Meh0UFlDJIvNUqcs",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717920350167,
+    "modifiedTime": 1717920350167,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!folders!Meh0UFlDJIvNUqcs"
+}

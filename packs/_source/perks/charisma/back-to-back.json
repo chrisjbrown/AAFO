@@ -1,0 +1,100 @@
+{
+  "folder": "Meh0UFlDJIvNUqcs",
+  "name": "Back to Back",
+  "type": "perk",
+  "_id": "RfUoRJSSmsO9xKuK",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Charisma 6.</p><p>Shoulder to shoulder. When you roll combat sequence,  choose one ally. When you and that ally are within 5 feet  of each other, you and that ally gain the following benefits;  Your AC increases by 1, your DT increases by 2, and  whenever either you or the chosen ally take damage,  either you or that ally can choose to reduce that damage  by half. Then, they take the same amount of damage.  Repeat: Once a player character has taken this perk, it  cannot be taken by any other characters. If you take this  perk again, the AC bonus increases by 1, the DT bonus  increases by 2, and whenever you or that ally take  damage, either you or that ally can choose to reduce that  damage to 0. Then, they take the damage instead.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717920614853,
+    "modifiedTime": 1717920633162,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!RfUoRJSSmsO9xKuK"
+}

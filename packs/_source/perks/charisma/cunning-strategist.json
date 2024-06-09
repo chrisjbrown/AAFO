@@ -1,0 +1,100 @@
+{
+  "folder": "Meh0UFlDJIvNUqcs",
+  "name": "Cunning Strategist",
+  "type": "perk",
+  "_id": "R9gxu18moZUBozy5",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Charisma 9.</p><p>Whenever another player character flips their Karma Cap  back over when they roll a 1 on a d20 or if they are hit with  a critical hit, you can also flip over your Karma Cap.  Repeat: You can take this perk up to a maximum of twice,  when you take it again; whenever another player character  flips their Karma Cap back over when they roll a 1 on a  d20 or if they are hit with a critical hit, you can choose for  another player character to flip over their Karma Cap</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717920827719,
+    "modifiedTime": 1717920845210,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!R9gxu18moZUBozy5"
+}

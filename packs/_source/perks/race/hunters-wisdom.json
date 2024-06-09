@@ -1,0 +1,100 @@
+{
+  "folder": "StUeBTC4dSo7b4WU",
+  "name": "Hunter's Wisdom",
+  "type": "perk",
+  "_id": "m4JRLQSuQMBtpb2z",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Human, Ghoul, or Super Mutant.</p><p>Whenever you take damage from attacks made from  animals or insects, your DT increases by 2. Additionally,  whenever you consume the meat of an animal or insect  that has died within the past 15 minutes, you heal a  number of hit points equal to your healing rate, once you  heal in this way you cannot heal from it again until you rest  for at least 8 hours. If you consume prepared animal or  insect meat, you heal a number of stamina points equal to  your level.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717934245774,
+    "modifiedTime": 1717934261234,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!m4JRLQSuQMBtpb2z"
+}

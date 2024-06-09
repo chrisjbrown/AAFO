@@ -1,0 +1,100 @@
+{
+  "folder": "wI8mQuLGDRRzl4XM",
+  "name": "It Just Works",
+  "type": "perk",
+  "_id": "0GAUS0T2rDc0HQjS",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Luck 5.</p><p>Whenever any of your weapons or armor would gain a  level of decay, roll a Luck check with the DC equal to 12 +  the current levels of decay on the weapon or armor. If you  fail, the weapon or armor gains a level of decay. If you  succeed the weapon or armor still gains a level of decay,  but this level of decay doesn't apply any negative effects  for as long as you have it.  Repeat: You can take this perk up to a maximum of twice,  if you take it again; whenever you succeed the  aforementioned Luck check, the weapon or armor gains  no levels of decay instead.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717933773935,
+    "modifiedTime": 1717933793561,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!0GAUS0T2rDc0HQjS"
+}

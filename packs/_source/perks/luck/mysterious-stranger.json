@@ -1,0 +1,100 @@
+{
+  "folder": "wI8mQuLGDRRzl4XM",
+  "name": "Mysterious Stranger",
+  "type": "perk",
+  "_id": "4gjbM4TldUdoD0AX",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Luck 8.</p><p>You have the protection of the wasteland's guardian angel.  Choose a number from 2 to 19. Whenever you make an  attack roll and the result is the chosen number, the  Mysterious Stranger appears! When he appears, roll a d20  (you can choose to add your Luck ability modifier to this  roll) and consult the table below.  </p><p>Luck  Check  Effect  </p><p>1 - 9 The target of the attack roll takes ballistic damage  equal to 2 x your level.  </p><p>10 - 20 The target of the attack roll takes ballistic damage  equal to 3 x your level. </p><p>21 - 24 Your attack becomes a critical hit. If it was already  a critical hit; you do not roll your damage dice and  instead deal the maximum amount on each dice.  </p><p>25+ The target of the attack roll dies.  </p><p></p><p>Repeat: This perk can only be taken once and only by one  player character.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717933971786,
+    "modifiedTime": 1717934027999,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!4gjbM4TldUdoD0AX"
+}

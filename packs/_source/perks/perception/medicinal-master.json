@@ -1,0 +1,100 @@
+{
+  "folder": "i01gAOhXgG2QhtXj",
+  "name": "Medicinal Master",
+  "type": "perk",
+  "_id": "c01nRT1lzUqbfEKu",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Perception 10.</p><p>When another creature rests for at least an hour, you can  use a first aid kit, stimpak, or doctor's bag to heal them of  half of their total hit points. If they rest for at least 4 hours,  you you can use a first aid kit, stimpak, or doctor's bag to  heal them of all their hit points  Repeat: If you take this perk again, when another creature  rests for at least an hour, you can use a first aid kit,  stimpak, or doctor's bag to heal them of all their hit points.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717866976878,
+    "modifiedTime": 1717866994103,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!c01nRT1lzUqbfEKu"
+}

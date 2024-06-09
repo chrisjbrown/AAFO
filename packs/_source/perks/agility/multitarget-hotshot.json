@@ -1,0 +1,100 @@
+{
+  "folder": "hMC5Hx28Xq4VMdqS",
+  "name": "Multitarget Hotshot",
+  "type": "perk",
+  "_id": "JgoJNPO1j4w0duUz",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Agility 6.</p><p>Whenever you hit a creature with a ranged attack, your  next ranged attack roll is increased by 2 so long as you  target a different creature. After this second attack, if you  target a different creature than the previous two attacks,  the attack roll is increased by 4. After this third attack, you  cannot gain the initial increase of 2 until you make another  ranged attack. Clarification: You can make one normal ranged  attack, then if you target another creature, you get +2. If you  target another different creature, you get +4. Then, the bonus  resets. You need to attack a creature without this perk's bonus to  start the +2 to +4 cycle again. Further clarification, you do not  need to make these attacks all on one turn.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717921973731,
+    "modifiedTime": 1717921988088,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!JgoJNPO1j4w0duUz"
+}

@@ -1,0 +1,100 @@
+{
+  "name": "Living Weapons",
+  "type": "perk",
+  "_id": "4owCFYF5Bvva3Ow3",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Strength 10.</p><p>You can use other creatures as improved weapons. If they  are unwilling, you must succeed a grapple check to use  them as an improvised weapon. Using a creature as an  improved weapon costs 6 AP, uses your Melee Weapons  skill to hit, critically hits on 20 (x2), and deals a number of  d6's of impact damage depending on their size. Small  creatures deal 3d6 impact damage, medium creatures  deal 4d6 impact damage, and large creatures deal 5d6  impact damage (you cannot use a creature huge or  greater as an improvised weapon). You can also throw  them a number of feet equal to 2 x your Strength score. If  you throw a creature into another creature and deal impact  damage to their hit points, they both fall prone. Whenever  a creature is used as an improved weapon, they take half  of the impact damage dealt to their hit points</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "zEfrUM1XVzAjNeZO",
+  "sort": 100782,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717865115339,
+    "modifiedTime": 1717866593983,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!4owCFYF5Bvva3Ow3"
+}

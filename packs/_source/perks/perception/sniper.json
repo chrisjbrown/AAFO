@@ -1,0 +1,100 @@
+{
+  "folder": "i01gAOhXgG2QhtXj",
+  "name": "Sniper",
+  "type": "perk",
+  "_id": "UU41OWmPRATgQpFF",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Perception 9.</p><p>Whenever you spend action points to make an attack roll  with a two-handed ranged weapon, you can spend 1  additional action point to add 2 to the result of the roll. You  can spend up to 3 additional action points to add an  additional 2 to the attack per action point used.  Additionally, if you make a targeted attack roll to the head  with a rifle that has the Scope mod, you critically hit on the  attack roll, and you deal damage to the target's hit points;  the target dies so long as it can't live without its head, or  isn't wearing a power armor helmet.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717866903208,
+    "modifiedTime": 1717866922968,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!UU41OWmPRATgQpFF"
+}

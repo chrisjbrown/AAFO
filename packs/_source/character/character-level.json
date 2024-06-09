@@ -1,0 +1,979 @@
+{
+  "name": "Character Level",
+  "type": "class",
+  "img": "icons/svg/up.svg",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "aafoLevel",
+    "levels": 1,
+    "hitDice": "d6",
+    "hitDiceUsed": 0,
+    "advancement": [
+      {
+        "_id": "MaHLxQIJhdAGtpEu",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 10,
+          "sp": 10
+        },
+        "value": {},
+        "level": 1,
+        "title": ""
+      },
+      {
+        "_id": "roeCu1eeMNG3v7OI",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 3,
+        "title": ""
+      },
+      {
+        "_id": "4kcYeziU5PV32a93",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 5,
+        "title": ""
+      },
+      {
+        "_id": "YanhznUaUd9RPP9o",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 7,
+        "title": ""
+      },
+      {
+        "_id": "U7ahKlAujszbUyJN",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 9,
+        "title": ""
+      },
+      {
+        "_id": "03O51lVzVEig5SJS",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 11,
+        "title": ""
+      },
+      {
+        "_id": "K9TaqHErVQGQ65MD",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 13,
+        "title": ""
+      },
+      {
+        "_id": "FT5u7QNPKoPoWnj9",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 15,
+        "title": ""
+      },
+      {
+        "_id": "UxHrGpPEH7CqaJVi",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 17,
+        "title": ""
+      },
+      {
+        "_id": "35ANEVaekNr9ZvI8",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 19,
+        "title": ""
+      },
+      {
+        "_id": "moisVVryvABuDt8d",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 21,
+        "title": ""
+      },
+      {
+        "_id": "pQ5g4YxiiOHedazt",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 23,
+        "title": ""
+      },
+      {
+        "_id": "ns0bHsPSIp8P5pxB",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 25,
+        "title": ""
+      },
+      {
+        "_id": "u00ncJysBQxMcLJQ",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 27,
+        "title": ""
+      },
+      {
+        "_id": "AwsDlfmo5qk7syDj",
+        "type": "HitPoints",
+        "configuration": {
+          "hp": 5,
+          "sp": 5
+        },
+        "value": {},
+        "level": 29,
+        "title": ""
+      },
+      {
+        "_id": "YOoCHAqKywgzPMhC",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 5,
+        "title": ""
+      },
+      {
+        "_id": "dy8jTx1vIDUqAJ1B",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 3,
+          "fixed": {
+            "str": 0,
+            "per": 0,
+            "end": 0,
+            "cha": 0,
+            "int": 0,
+            "agi": 0,
+            "luc": 0
+          },
+          "cap": 10
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 1,
+        "title": ""
+      },
+      {
+        "_id": "ndMjMtgaK16bhoqf",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 9,
+        "title": ""
+      },
+      {
+        "_id": "iWgNZ1erh1p7oppD",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 13,
+        "title": ""
+      },
+      {
+        "_id": "K31uKzhGndCcoSDE",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 17,
+        "title": ""
+      },
+      {
+        "_id": "NyTAW0ZufMHOP8rk",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 21,
+        "title": ""
+      },
+      {
+        "_id": "vxGAHHdDBUj7rqP8",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 25,
+        "title": ""
+      },
+      {
+        "_id": "s7yPg0uxz0gFfMhw",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 4
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 29,
+        "title": ""
+      },
+      {
+        "_id": "SfodWQeKV74QI0Ed",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {
+            "1": {
+              "count": 1,
+              "replacement": false
+            },
+            "2": {
+              "count": 1,
+              "replacement": false
+            },
+            "3": {
+              "count": 1,
+              "replacement": false
+            },
+            "4": {
+              "count": 1,
+              "replacement": false
+            },
+            "6": {
+              "count": 1,
+              "replacement": false
+            },
+            "7": {
+              "count": 1,
+              "replacement": false
+            },
+            "8": {
+              "count": 1,
+              "replacement": false
+            },
+            "10": {
+              "count": 1,
+              "replacement": false
+            },
+            "11": {
+              "count": 1,
+              "replacement": false
+            },
+            "12": {
+              "count": 1,
+              "replacement": false
+            },
+            "14": {
+              "count": 1,
+              "replacement": false
+            },
+            "15": {
+              "count": 1,
+              "replacement": false
+            },
+            "16": {
+              "count": 1,
+              "replacement": false
+            },
+            "18": {
+              "count": 1,
+              "replacement": false
+            },
+            "20": {
+              "count": 1,
+              "replacement": false
+            },
+            "21": {
+              "count": 1,
+              "replacement": false
+            },
+            "22": {
+              "count": 1,
+              "replacement": false
+            },
+            "23": {
+              "count": 1,
+              "replacement": false
+            },
+            "24": {
+              "count": 1,
+              "replacement": false
+            },
+            "25": {
+              "count": 1,
+              "replacement": false
+            },
+            "26": {
+              "count": 1,
+              "replacement": false
+            },
+            "27": {
+              "count": 1,
+              "replacement": false
+            },
+            "28": {
+              "count": 1,
+              "replacement": false
+            },
+            "29": {
+              "count": 1,
+              "replacement": false
+            },
+            "30": {
+              "count": 1,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "perk",
+          "pool": [
+            {
+              "uuid": "Compendium.aafo.perks.Item.RvpQGUW1lT5ofwRX"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.pECpxObHgbWs4wK3"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.KS8Zr7lkNBgZvjXa"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.nbb9bg2B7HLvyCC8"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.8jkfeYr6jdjUIyEc"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.sTXTeBfPdrBHhdMK"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.iLK91Lxu4AFoNgpe"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.eXKR45XuAykWD6qm"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.opRp09SOmcYYZhsC"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.uy87ULqqsOQucmJQ"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.JgoJNPO1j4w0duUz"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.3qrBPx6Vujgr0Qvc"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.MH6HcevqbKkjJJph"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.DmGZiAAFdqWxI5jb"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.vLC3Z8G4hiRTOHzk"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.YLznCSal8tyUj1wr"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.6UHKbKKh5LLMzg7I"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.TYrOeZi50wGZFcV1"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Jgw93mwhODm7CnH7"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.TeE4DgtIISiH5J47"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.RfUoRJSSmsO9xKuK"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.4d5l9voLGJtjhofh"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Kln86nMHF0x8sI2B"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ZZ6mdbj6lxKNqBbe"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.GEfxdcLGBJJcWRMj"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.R9gxu18moZUBozy5"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.4kiUr5wCkj5Z6mMv"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.SYPblOzVUsI3u4Km"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.EJdcI9mZVuuVhoEr"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ur3nWO0uZiRbMz6T"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.LgP0fn57DidlMZFM"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.UmGGh8gi2XMZXlDR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.tTHrMx2NuY73nr9z"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.QNytUIQySPQuau7X"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.NvB0zmGTWtlME3Ts"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.xW9wcQYRBPBvPbTg"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.1HmMmup2bbp8glmV"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.jd3L1mXToZCGdHKR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.pV4RWBUXRpzpnmq8"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.SojXoVOEzvB52RiL"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.vRrnmQGDJ1yJGyaK"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ZOu8MhSdwn1r1tM8"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.stv3Ax5EBxkK9QZu"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.jZB4QNjwhBxxJNZC"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ce8Z1U5byUOqvWrE"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.uQHTebRRDh1bebXH"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.tIpJzFKpYb0z1Wpt"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.yID7ACNYrtle2UnW"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ZgS5k7Krpo6qRLRg"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.I4nXqUzNmstSsW0Y"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.RQvQjnQ2oNtnNhiS"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.88FMnOqVNl92GY06"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.09WNeTgKVFbe66lS"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.w4OA8iUnHYbeXRTB"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.0NCytRyyDIPMtIcC"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Huk3ipSfv5z7YP9R"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.vQUvoLYo5du1DPWR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.GCblrNyrMS8DxPHG"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.xu3FpdJAxlnN3JzW"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.6MIVzey5CrZVKZ57"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.cGg6uBv2lpR98kPu"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.kr2c3ulSk5IWVceF"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.2I7Yziu3HovDnpXR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.roJMhduqlY4h9G3e"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.wWA4bshWfaHqk1m5"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.K6khBM1WUBbEjpJv"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.cvVv3LwXbGSDEg3I"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.XzKGGlHOguqpItKk"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.HvBXUXgbZDrnPpUs"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.tiKX0U9XtS3NdeKS"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.z9LN2FlJmJyyADJ5"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.UDtef4nVQ3cHZl7s"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ldJ0YuLfJWS7q6U1"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.72uEdAYLRjNx47U2"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.edpFSuhDYegkaiSB"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.rBLpR1ZWbJSPyBZl"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.YqsbMFWCpWO11lKU"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.sWjrYA4mQiJlSr06"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.BrDUpReKTh1VYyji"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.xqtk53FBRBYuEflw"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.FqAHYzHTmmxh6N83"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.RDmJvQd2WSqU9M37"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.W5cWhhPFtqRLeIox"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.OVIGp3KHZt8wu9iL"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Orkh9aP2b8qFZX8q"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.2oInxkuui9T73rsn"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.XOmNyvYqTLlCfggA"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.fdvI52lwrGtAd6sK"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.hfSgDUVe5uirFUeR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.kxo1pdAKrkkN45RX"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.3h6N6PNt5CZbA2Fp"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.OEWaU71QmLT2or0u"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.mwRXCPwBFPWHhKVi"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.nluCZ1plYDJ5o90L"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.0GAUS0T2rDc0HQjS"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Mj60bvhuZMkZzEBL"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.4gjbM4TldUdoD0AX"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.3m4VkqxrU5pJDcol"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.mVRkh9r1zTDEKcwh"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.D2W4t1F4i2OQT7cy"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.b5xUGL1qvEqtEetX"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.XzDw1w4LMJ2Ihw6L"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Yecec2pi2NAhGJCG"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.piin2qEWijrX47hI"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.I6147irsFUngmUnn"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.IbTr5htXC51Aq71L"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.GEwg5FEpbntt2vB2"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.wN4mjtk9GObN4pda"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.DNL9xyIwL0SMyXe9"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.IbgmOSM5ZiKUDjjl"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.Q0p9YOHNc28eNrpq"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ipyW6JipatwHRQ8A"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.l6N5CiO8R0cqVVhy"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.c01nRT1lzUqbfEKu"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.tnOh28QjNvllcVVw"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.cT7srV11ZIcZaclR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.PAEXrY5whGAkyZT0"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.NNjdcnR0MJCSQTFk"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.UU41OWmPRATgQpFF"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.XSRpneLd1Kz9YH3c"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.sI0aLrj7oBEv9QfQ"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.7eZ0YuIx9fq582T3"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.WajwO5veQiTgCKYZ"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.NbzC3Pvtlz6CVpJv"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.jPQwpXnmdV45Is1J"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.htI3gP9uucjvDZkw"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.nZm6SDsOzdS0Wjne"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.gftdVMrS3YrEVYaq"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.FhhSDKZjfAnLeGug"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.VumCR6tXS4s9ov2g"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.EpT9l0f9ujkrM9lp"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.9z3zDyX6Tu5dFyH4"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.17dhHnoZgx7G4Oal"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.MM5IrAqHCz9Vmxdm"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.7dr8ThdGXJsrgMYc"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.VFIy4ixmjlT4n30L"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.pNOfuWFDI2fs6jlS"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.NKSXSxT0zdLbT1Nd"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.m4JRLQSuQMBtpb2z"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.wcuGH0tjRkcw6HgR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.0srEutmYtKOvGiTp"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.jvQt7cyGF3kPVYKO"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.oQeQ7If9B5XZrUgP"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.09iE2k192J8fpz6f"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.mepA8ccTSrNeZPr1"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.FgQMP2xgjwe4p01g"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.FvpSP92aCN2k08ki"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.y3cUrwEUN6qp5lC8"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.0xz50p3Y9Eg5gZum"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.32b88RNTLuHrISz6"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.KRWORZnZyDnGobA4"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.qxPCbMUc7eDff3X3"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.v0ThAi4zKxIw9wmJ"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.dZkfTtAiLsMrHly3"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.V8Ulit2raa9I3pie"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.0ruMaoJ4Rh8iZVXO"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.ldW3idi4yb0m3NL5"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.DUVfLJEzfo2STm2A"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.DGIQSsE3HXBeRd3s"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.GQey1gK8Qzqlqb6L"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.8X8wsr70WFehBQml"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.HgHMOeCQvr0oU3oi"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.NvMlsEniN8TwojVJ"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.4owCFYF5Bvva3Ow3"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.2Vhgco4AbsCgn1Oh"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.fiRkONzD22cXmWv0"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.57cMXAtgFEOPXdbC"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.brxfXAIg2IHs7vyK"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.deT6uE85PqmstLIx"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.RxwknFefxSQbGNu6"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.BOvPs4EIexToiTzl"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.OpFgJy9Fz0SPCZuw"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.fKpSNnMWka9OQDmb"
+            }
+          ],
+          "spell": null,
+          "hint": "",
+          "restriction": {}
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        },
+        "title": ""
+      },
+      {
+        "_id": "0x3iartDFFrDyWdi",
+        "type": "ItemChoice",
+        "configuration": {
+          "choices": {},
+          "allowDrops": true,
+          "type": null,
+          "pool": [
+            {
+              "uuid": "Compendium.aafo.perks.Item.vQUvoLYo5du1DPWR"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.GCblrNyrMS8DxPHG"
+            },
+            {
+              "uuid": "Compendium.aafo.perks.Item.xu3FpdJAxlnN3JzW"
+            }
+          ],
+          "spell": null,
+          "restriction": {}
+        },
+        "value": {
+          "added": {},
+          "replaced": {}
+        }
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    },
+    "wealth": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717935408043,
+    "modifiedTime": 1717935408043,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "gQiHh04adhvRbT8u",
+  "sort": 0,
+  "_key": "!items!gQiHh04adhvRbT8u"
+}

@@ -1,0 +1,100 @@
+{
+  "folder": "aqBzSHfT2Qbuwr9i",
+  "name": "Adroit Alchemist",
+  "type": "perk",
+  "_id": "tiKX0U9XtS3NdeKS",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>Requirements: Intelligence 5.</p><p>You understand the complex formulae of chems and can  now alter them to change their effects. Whenever you craft  a Chem, you use one less material listed in the crafting  materials to a minimum of one. You can also make any  Chem potent or diluted so long as you use one of the  materials listed in the crafting materials. A potent Chem's  effects are doubled, however the addiction DC is  increased by 2. A diluted Chem's effects are halved,  however you cannot become addicted to a diluted Chem.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717921046595,
+    "modifiedTime": 1717921063809,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!tiKX0U9XtS3NdeKS"
+}

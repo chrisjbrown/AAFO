@@ -1,0 +1,100 @@
+{
+  "name": "Fight the Power!",
+  "type": "perk",
+  "_id": "wWA4bshWfaHqk1m5",
+  "img": "systems/aafo/icons/svg/items/feature.svg",
+  "system": {
+    "description": {
+      "value": "<p>You've had enough of these so-called \"authorities\"!  Whenever you take damage to your hit points from a  creature affiliated to a faction, your DT is increased by 1.  Additionally, whenever you deal damage to a creature  affiliated to a faction, the damage increases by 1. (Faction  examples include the NCR, Brotherhood of Steel,  Caesar's Legion, Institute, or Railroad. Up to GM's  discretion.)  Repeat: You can take this perk up to a maximum of twice</p>",
+      "chat": ""
+    },
+    "source": {},
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": "",
+      "width": null,
+      "units": "",
+      "type": "",
+      "prompt": true
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": "",
+      "prompt": true
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null,
+      "scale": false
+    },
+    "ability": null,
+    "actionType": "",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "enchantment": null,
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "summons": null,
+    "prerequisites": {
+      "level": null
+    },
+    "properties": [],
+    "advancement": [],
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "effects": [],
+  "folder": "6xzxSjGNSaicHjyp",
+  "sort": 100782,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717864407377,
+    "modifiedTime": 1717866558390,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!items!wWA4bshWfaHqk1m5"
+}

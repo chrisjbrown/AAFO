@@ -1,0 +1,22 @@
+{
+  "name": "Race",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "StUeBTC4dSo7b4WU",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1717934179560,
+    "modifiedTime": 1717934179560,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!folders!StUeBTC4dSo7b4WU"
+}
