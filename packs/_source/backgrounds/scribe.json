@@ -1,0 +1,34 @@
+{
+  "name": "Scribe",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p></p><p>Skills: +2 to Crafting, Energy Weapons, and Medicine.</p><p>Trait: Wasteland Knowledge</p><p>What they don't tell you about being a book organizer is</p><p>the faster you do it, the more time you get to read. You've</p><p>spent countless hours organizing a trove of information</p><p>that you wish you could share with the entire world. The</p><p>accumulation of knowledge from these texts could better</p><p>the world if raiders would stop to read a chapter. You're</p><p>venturing into the wasteland to share your knowledge, or</p><p>to find more to add to your collection.</p><p>Starting Equipment.</p><p>• Human, Ghoul, or Super Mutant Scientist</p><p>x1 cloth armor, x1 laser pistol, x2 energy cell, x1 backpack, x1</p><p>sleeping bag, x1 one person tent, x3 cram, x2 purified water, x1</p><p>diluted RadAway, x1 Rad-X, x1 stimpak, and x50 caps.</p><p>• Gen-2 Synth or Robot Scientist</p><p>x1 cloth armor, x1 laser pistol, x2 energy cell, x1 backpack, x2</p><p>RobCo Quick Fix-it 2.0, x1 Programmer's Digest magazine, x1</p><p>data scrubber, and x50 caps</p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034849559,
+    "modifiedTime": 1718034852190,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "5O1egaaDIaMPubL1",
+  "sort": 100000,
+  "_key": "!items!5O1egaaDIaMPubL1"
+}

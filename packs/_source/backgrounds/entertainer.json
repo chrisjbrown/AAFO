@@ -1,0 +1,34 @@
+{
+  "name": "Entertainer",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p></p><p>Skills: +2 to Barter, Speech, and Intimidation.</p><p>Trait: A Moment of Respite</p><p>Talented since you were young, you marvel wastelanders</p><p>with your exceptional ability to perform. This life doesn't</p><p>come easy though. You've been extorted, swindled,</p><p>targeted, and been made a fool more than once. When</p><p>you're a star, everyone wants to glimmer just as bright.</p><p>You're wandering the wasteland looking for the next gig, or</p><p>maybe you want to keep your talents on hold for now.</p><p>Starting Equipment.</p><p>• Human, Ghoul, or Super Mutant Entertainer</p><p>x1 cloth armor, x1 switchblade, x1 10mm pistol with three levels</p><p>of decay, x10 10mm ammo, x1 backpack, x2 dynamite, x3 flares,</p><p>x3 salisbury steak, x1 desert salad, x1 nuka-cola, x1 dirty</p><p>wastelander, x1 healing powder, x1 stimpak, x2 purified water,</p><p>and x50 caps.</p><p>• Gen-2 Synth or Robot Entertainer</p><p>x1 cloth armor, x1 switchblade, x1 10mm pistol with two levels of</p><p>decay, x20 10mm bullets, x1 backpack, x2 dynamite, x3 flares,</p><p>x2 RobCo Quick FIx-it 2.0, and x50 caps.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034838266,
+    "modifiedTime": 1718034852190,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "ISwBDdFoZO8WIs18",
+  "sort": 1300000,
+  "_key": "!items!ISwBDdFoZO8WIs18"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "Wastelander",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p></p><p>Skills: +2 to Guns, Survival, and Unarmed.</p><p>Trait: Adventurers Instinct</p><p>All you've ever needed was what's on your back. You've</p><p>traveled far and wide across the wasteland, trading,</p><p>meeting folks, and moving on. You've killed raiders,</p><p>explored abandoned ruins, and crossed paths with</p><p>soldiers. But you're as impactful to this world as a</p><p>tumbleweed in the desert, but all of that is about to</p><p>change.</p><p>Starting Equipment.</p><p>• Human Wastelander</p><p>x1 leather armor, x1 sharpened pole, x1 10mm pistol, x10 10mm</p><p>ammo, x1 backpack, x1 sleeping bag, x1 one person tent, x2</p><p>mutfruit, x2 apples, x1 vegetable soup, x2 purified water, x1</p><p>healing powder, and x50 caps.</p><p>• Ghoul or Super Mutant Wastelander</p><p>x1 leather armor, x1 sharpened pole, x1 10mm pistol, x10 10mm</p><p>ammo, x1 backpack, x1 sleeping bag, x1 one person tent, x2</p><p>mutfruit, x2 apples, x1 vegetable soup, x3 dirty water, x1</p><p>nuka-cola, x1 diluted stimpak, and x50 caps.</p><p>• Gen-2 Synth or Robot Wastelander</p><p>x1 leather armor, x1 sharpened pole, x1 10mm pistol, x10 10mm</p><p>ammo, x1 backpack, x1 bandolier, x1 binoculars, x1 grappling</p><p>hook, x1 rope, RobCo Quick Fix-it 1.0, and x50 caps.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034854133,
+    "modifiedTime": 1718034854133,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "W1LFc1XJ7pRLbujF",
+  "sort": 0,
+  "_key": "!items!W1LFc1XJ7pRLbujF"
+}

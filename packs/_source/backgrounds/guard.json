@@ -1,0 +1,34 @@
+{
+  "name": "Guard",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p></p><p>Skills: +2 to Guns, Speech, and Melee Weapons</p><p>Trait: Vigilant Watch</p><p>\"It's an easy job\", you remember hearing from some of</p><p>your friends. Then you remember the countless ghouls</p><p>you've had to incinerate, or the sting in your eyes as you</p><p>kept watch at dawn, or the family's you've had to turn</p><p>away from safety. You were trained to keep those who</p><p>were paying you safe. Working alongside a team who had</p><p>your back in the toughest of situations. But you've since</p><p>left your job, putting your skills to use in the wasteland.</p><p>Starting Equipment.</p><p>• Human, Ghoul or Super Mutant Farmer.</p><p>x1 metal armor with one level of decay 225, x1 police baton with</p><p>two levels of decay 84, x1 9mm pistol 200, x20 9mm ammo 40,</p><p>x10 9mm rubber ammo 10c, x1 backpack 20, x1 sleeping bag</p><p>20, x1 one person tent 25, x1 binoculars 25c, x1 diluted stimpak</p><p>40, x3 purified water 60, x2 pork n' beans 10c, x1 coffee 15c, x2</p><p>donuts 16, and x50 caps.</p><p>• Gen-2 Synth or Robot Farmer</p><p>x1 metal armor with one level of decay, x1 police baton with two</p><p>levels of decay, x1 9mm pistol 200, x35 9mm ammo, x20 9mm</p><p>rubber ammo, x1 backpack, x1 binoculars, x2 RobCo Quick</p><p>Fix-it, x1 Milsurp Review magazine, x1 cache clearer, and x50</p><p>caps.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034839931,
+    "modifiedTime": 1718034852190,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "DkM3zzcrFYFo8wE5",
+  "sort": 1400000,
+  "_key": "!items!DkM3zzcrFYFo8wE5"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Super Mutant",
+  "type": "race",
+  "img": "systems/aafo/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p>Age.</p><p>Super mutants are nearly immortal, their lifespan is unknown. Some have lived for hundreds of years. Size.</p><p>Super mutants rarely vary in height and build, but they can range from 7 to 9 feet in height. Your size is Medium. Due to the specifics required for it, you cannot use power armor unless it is specifically modded to your body type.</p><p>Evolution.</p><p>You cannot gain levels of radiation and you are immune to radiation damage. Additionally, you gain no Irradiated levels from consuming food or water.</p><p>Superior Strength.</p><p>Due to your increased mass in muscle, your Strength score increases by 1 and cannot be lower than 6. Additionally your Carry Load is increased by 40.</p><p>Mass Exertion.</p><p>The amount of required food and water you need each day with gaining levels of hunger and dehydration is doubled.</p><p>Bulky.</p><p>Super mutants have many advantages but precision does not come easy, whenever your weapons or armor would gain a level of decay, they gain an additional one.</p><p>Variant Super mutant Traits.</p><p>If your GM allows it, you can optionally start with one of these variant abilities which replaces the Superior Strength trait.</p><p>Defective Strain.</p><p>Due to the various types of experimentation performed on many humans, when you became a Super mutant; your body was empowered but your mind weakened. Your Strength and Endurance ability scores both increase by 2 and your Carry Load is increased by 40. However, your Intelligence ability score is reduced by 2 and cannot be raised higher than a 3.</p><p></p>",
+      "chat": ""
+    },
+    "source": {},
+    "advancement": [
+      {
+        "type": "Size",
+        "_id": "jwnJnZFEDfmHYgno",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "level": 0,
+        "value": {}
+      }
+    ],
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": null,
+      "units": null,
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": null,
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "identifier": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034879993,
+    "modifiedTime": 1718034879993,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "5agr6vwdJign3Zb0",
+  "sort": 0,
+  "_key": "!items!5agr6vwdJign3Zb0"
+}

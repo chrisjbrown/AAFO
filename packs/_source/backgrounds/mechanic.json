@@ -1,0 +1,34 @@
+{
+  "name": "Mechanic",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p></p><p>Skills: +2 to Crafting, Guns, and Science.</p><p>Trait: Proper Maintenance</p><p>In a broken world, you're one of the few strands holding it</p><p>together. Fixing things is your speciality, and since you</p><p>were young you've always been fascinated with how</p><p>things work. Especially the mysteries of technology from</p><p>the old war. You've oiled countless guns, tightened</p><p>triggers, scrapped old pieces for new ones, and used</p><p>metric tons of duct tape. You figure your skills could be</p><p>best used out in the wasteland.</p><p>Starting Equipment.</p><p>• Human, Ghoul, or Super Mutant Mechanic</p><p>x1 cloth armor, x1 wrench, x1 pipe revolver, x10 .44 bullets, x1</p><p>backpack, x1 bandolier, x1 canteen, x1 rope, x1 sleeping bag, x1</p><p>one person tent, x3 cram, x3 purified water, x1 weapon repair kit,</p><p>and x50 caps.</p><p>• Gen-2 Synth or Robot Laborer</p><p>x1 cloth armor, x1 wrench, x1 pipe revolver, x15 .44 bullets, x1</p><p>backpack, x1 bandolier, x1 rope, x1 RobCo Quick Fix-it 1.0, x2</p><p>weapon repair kit, and x50 caps.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034843158,
+    "modifiedTime": 1718034852190,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "Ar1lJN1XpwJXQDJr",
+  "sort": 700000,
+  "_key": "!items!Ar1lJN1XpwJXQDJr"
+}

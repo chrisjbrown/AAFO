@@ -25,7 +25,7 @@
   ],
   "packs": [
     {
-      "name": "heroes",
+      "name": "heroesdnd",
       "label": "Starter Heroes",
       "system": "aafo",
       "path": "packs/heroes",
@@ -34,73 +34,73 @@
       "flags": {}
     },
     {
-      "name": "monsters",
+      "name": "monstersdnd",
       "label": "Monsters (SRD)",
       "system": "aafo",
-      "path": "packs/monsters",
+      "path": "packs/monstersdnd",
       "type": "Actor",
       "private": false,
       "flags": {}
     },
     {
-      "name": "items",
+      "name": "itemsdnd",
       "label": "Items (SRD)",
       "system": "aafo",
-      "path": "packs/items",
+      "path": "packs/itemsdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "tradegoods",
+      "name": "tradegoodsdnd",
       "label": "Trade Goods (SRD)",
       "system": "aafo",
-      "path": "packs/tradegoods",
+      "path": "packs/tradegoodsdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "spells",
+      "name": "spellsdnd",
       "label": "Spells (SRD)",
       "system": "aafo",
-      "path": "packs/spells",
+      "path": "packs/spellsdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "backgrounds",
+      "name": "backgroundsdnd",
       "label": "Backgrounds (SRD)",
       "system": "aafo",
-      "path": "packs/backgrounds",
+      "path": "packs/backgroundsdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "classes",
+      "name": "classesdnd",
       "label": "Classes (SRD)",
       "system": "aafo",
-      "path": "packs/classes",
+      "path": "packs/classesdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "subclasses",
+      "name": "subclassesdnd",
       "label": "Subclasses (SRD)",
       "system": "aafo",
-      "path": "packs/subclasses",
+      "path": "packs/subclassesdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "classfeatures",
+      "name": "classfeaturesdnd",
       "label": "Class & Subclass Features (SRD)",
       "system": "aafo",
-      "path": "packs/classfeatures",
+      "path": "packs/classfeaturesdnd",
       "type": "Item",
       "private": false,
       "flags": {}
@@ -115,6 +115,24 @@
       "flags": {}
     },
     {
+      "name": "backgrounds",
+      "label": "Backgrounds",
+      "system": "aafo",
+      "path": "packs/backgrounds",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "races",
+      "label": "Races",
+      "system": "aafo",
+      "path": "packs/races",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "character",
       "label": "Character",
       "system": "aafo",
@@ -124,28 +142,28 @@
       "flags": {}
     },
     {
-      "name": "races",
+      "name": "racesdnd",
       "label": "Races (SRD)",
       "system": "aafo",
-      "path": "packs/races",
+      "path": "packs/racesdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "monsterfeatures",
+      "name": "monsterfeaturesdnd",
       "label": "Monster Features (SRD)",
       "system": "aafo",
-      "path": "packs/monsterfeatures",
+      "path": "packs/monsterfeaturesdnd",
       "type": "Item",
       "private": false,
       "flags": {}
     },
     {
-      "name": "rules",
+      "name": "rulesdnd",
       "label": "Rules (SRD)",
       "system": "aafo",
-      "path": "packs/rules",
+      "path": "packs/rulesdnd",
       "type": "JournalEntry",
       "private": false,
       "flags": {
@@ -164,10 +182,10 @@
       }
     },
     {
-      "name": "tables",
+      "name": "tablesdnd",
       "label": "Tables (SRD)",
       "system": "aafo",
-      "path": "packs/tables",
+      "path": "packs/tablesdnd",
       "type": "RollTable",
       "private": false,
       "flags": {}
@@ -179,9 +197,9 @@
       "sorting": "m",
       "color": "#cd2c1e",
       "packs": [
-        "rules",
-        "tables",
-        "heroes"
+        "rulesdnd",
+        "tablesdnd",
+        "heroesdnd"
       ],
       "folders": [
         {
@@ -189,11 +207,11 @@
           "sorting": "m",
           "color": "#b72c1f",
           "packs": [
-            "classes",
-            "subclasses",
-            "classfeatures",
-            "backgrounds",
-            "races"
+            "classesdnd",
+            "subclassesdnd",
+            "classfeaturesdnd",
+            "backgroundsdnd",
+            "racesdnd"
           ]
         },
         {
@@ -201,9 +219,9 @@
           "sorting": "m",
           "color": "#941919 ",
           "packs": [
-            "items",
-            "spells",
-            "tradegoods"
+            "itemsdnd",
+            "spellsdnd",
+            "tradegoodsdnd"
           ]
         },
         {
@@ -211,8 +229,8 @@
           "sorting": "m",
           "color": "#7d160c",
           "packs": [
-            "monsters",
-            "monsterfeatures"
+            "monstersdnd",
+            "monsterfeaturesdnd"
           ]
         }
       ]
@@ -231,7 +249,9 @@
           "color": "#b72c1f",
           "packs": [
             "character",
-            "perks"
+            "perks",
+            "backgrounds",
+            "races"
           ]
         }
       ]

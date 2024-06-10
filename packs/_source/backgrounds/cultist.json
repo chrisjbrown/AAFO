@@ -1,0 +1,34 @@
+{
+  "name": "Cultist",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p>Skills: +2 to Melee Weapons, Speech, and Sneak.</p><p>Trait: The Sight Beyond Whether you were born into this life or these people brought hope to you when you hit rock bottom. You are in service to a group of followers who zealously recruit all they can find into their doctrine. This new world, born of fire, is a gift. Only now that this world has been cleansed can the truth be seen. You now wander the wastes looking for signs and awaiting orders from the great beyond.</p><p></p><p>Starting Equipment.</p><p>Human Cultist</p><p>x1 cloth armor (with a rank 1 lead lined upgrade),</p><p>x1 knife,</p><p>x1 bolt-action pipe pistol,</p><p>x15 9mm bullets,</p><p>x1 backpack,</p><p>x1 chain,</p><p>x3 cram,</p><p>x1 diluted RadAway,</p><p>x1 Rad-X,</p><p>x1 healing powder,</p><p>x3 dirty water,</p><p>x1 purified water,</p><p>x50 caps.</p><p></p><p>Ghoul or Super Mutant Cultist</p><p>x1 leather armor,</p><p>x1 knife,</p><p>x1 bolt-action pipe pistol,</p><p>x15 9mm bullets,</p><p>x1 backpack,</p><p>x1 chain,</p><p>x3 cram,</p><p>x4 dirty water,</p><p>x1 stimpak,</p><p>x1 diluted stimpak,</p><p>x50 caps.</p><p></p><p>Gen-2 Synth Cultist</p><p>x1 leather armor,</p><p>x1 knife,</p><p>x1 bolt-action pipe pistol,</p><p>x15 9mm bullets,</p><p>x1 backpack,</p><p>x1 chain,</p><p>x1 diluted stimpak,</p><p>x1 RobCo Quick Fix-it 1.0,</p><p>x1 overclock hardware,</p><p>x1 cache clearer,</p><p>x50 caps.</p><p></p><p>Robot Cultist</p><p>x1 leather armor, </p><p>x1 knife, </p><p>x1 bolt-action pipe pistol, </p><p>x15 9mm bullets, </p><p>x1 backpack, </p><p>x1 chain, </p><p>x2 RobCo Quick Fix-it 1.0, </p><p>x1overclock hardware, </p><p>x1 cache clearer, </p><p>x50 caps.</p><p></p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034833537,
+    "modifiedTime": 1718034852190,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "Tok2QMdpg1HUwZQU",
+  "sort": 1600000,
+  "_key": "!items!Tok2QMdpg1HUwZQU"
+}

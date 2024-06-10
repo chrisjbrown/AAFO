@@ -1,0 +1,65 @@
+{
+  "name": "Robot",
+  "type": "race",
+  "img": "systems/aafo/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "",
+      "chat": ""
+    },
+    "source": {},
+    "advancement": [
+      {
+        "type": "Size",
+        "_id": "AylIYrF9ONmeBeXo",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "level": 0,
+        "value": {}
+      }
+    ],
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": null,
+      "units": null,
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": null,
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "identifier": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034879036,
+    "modifiedTime": 1718034879036,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "pZTOEmQv1yeZj7PP",
+  "sort": 0,
+  "_key": "!items!pZTOEmQv1yeZj7PP"
+}

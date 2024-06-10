@@ -1,0 +1,34 @@
+{
+  "name": "Pit Fighter",
+  "type": "background",
+  "img": "systems/aafo/icons/svg/items/background.svg",
+  "system": {
+    "description": {
+      "value": "<p></p><p>Skills: +2 to Barter, Melee, and Unarmed.</p><p>Trait: Endure the Battle</p><p>It takes a lot to get back up and keep going, but it's all</p><p>you've known. Wastelanders place their hard earned caps</p><p>on your ability to fight, that burden fuels your every punch.</p><p>You've taken down many competitors, and have felt the</p><p>bitter taste of defeat but it only ever makes your victory</p><p>that much sweeter. However, something has happened to</p><p>your establishment. And now you must wander the wastes</p><p>with your skills to find a new purpose in life.</p><p>Starting Equipment.</p><p>• Human Ghoul or Super Mutant Pit Fighter</p><p>x1 lead pipe with two levels of decay, x1 brass knuckles, x1</p><p>spiked knuckles, x1 bandolier, x1 ball bearings, x1 sleeping bag,</p><p>x1 one person tent, x3 cram, x1 vodka, x3 healing powder, x3</p><p>purified water, x1 diluted stimpak, and x50 caps.</p><p>• Gen 2 Synth or Robot Cultist</p><p>x1 metal armor with one level of decay, x1 lead pipe with two</p><p>levels of decay, x1 brass knuckles, x1 spiked knuckles, x1</p><p>bandolier, x1 ball bearings, x1 RobCo Quick Fix-it 2.0, and x50</p><p>caps.</p>",
+      "chat": ""
+    },
+    "source": {},
+    "startingEquipment": [],
+    "identifier": "",
+    "advancement": []
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034846701,
+    "modifiedTime": 1718034852190,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "xy3TGJx7s3SwcTWf",
+  "sort": 600000,
+  "_key": "!items!xy3TGJx7s3SwcTWf"
+}

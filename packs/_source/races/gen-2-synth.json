@@ -1,0 +1,65 @@
+{
+  "name": "Gen-2 Synth",
+  "type": "race",
+  "img": "systems/aafo/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p>Size.</p><p>Gen-2 Synths vary widely in height and build, your size is Medium or Small. Inorganic Body. You are immune to radiation and poison. You gain no effects from Chems, Drinks or Food. Additionally you have no need to breathe, sleep, eat, or drink.</p><p></p><p>Variant Gen-2 Synth Traits.</p><p>If your GM allows it, you can optionally start with these variant abilities.</p><p></p><p>Brittle Body.</p><p>Whenever a creature makes a targeted attack against you, you gain two limb conditions instead of one. Additionally you are vulnerable to electricity damage. </p><p>Software and Hardware Upgrades.</p><p>Whenever you gain a perk, you are considered a Robot for perk requirements. </p><p>Artificial Intelligence Algorithms. </p><p>Whenever you gain skill points, you gain 1 more</p>",
+      "chat": ""
+    },
+    "source": {},
+    "advancement": [
+      {
+        "type": "Size",
+        "_id": "2ym0ff1fKGNmFGH3",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "level": 0,
+        "value": {}
+      }
+    ],
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": null,
+      "units": null,
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": null,
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "identifier": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034876123,
+    "modifiedTime": 1718034878086,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "LBO52k7Nnai3Tju8",
+  "sort": 100000,
+  "_key": "!items!LBO52k7Nnai3Tju8"
+}

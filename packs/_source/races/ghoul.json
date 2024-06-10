@@ -1,0 +1,65 @@
+{
+  "name": "Ghoul",
+  "type": "race",
+  "img": "systems/aafo/icons/svg/items/race.svg",
+  "system": {
+    "description": {
+      "value": "<p>Age.</p><p>Ghouls are nearly immortal, their lifespan is unknown. Some Ghouls have survived from even before the Great War over 200 years ago.</p><p>Size.</p><p>Ghouls vary widely in height and build, your size is Medium or Small.</p><p>Evolution.</p><p>You cannot gain levels of radiation and you are immune to radiation damage. Additionally, you gain no Irradiated levels from consuming food or water.</p><p>Resilient Anatomy.</p><p>You are resistant to poison damage. Any stamina points you would gain from consuming food, drinks, or chems is halved (rounded down). Any hit points you would gain from stimpaks is halved (rounded down). You cannot gain hit points from healing powder. Syringes that aren't 'loaders' have no effect on you. Additionally, whenever you take damage from the bleeding condition, you take half as much. Variant Ghoul Traits. If your GM allows it, you can optionally start with these variant abilities. Many Roads Walked. You gain a +2 in all skills and you gain an extra perk at 1st Level.</p><p>Old Bones.</p><p>You are immune to poison damage and you gain the Stitched Together perk.</p><p>Half Life.</p><p>Your mind slips each day, ghoulification has taken an immense toll on you and you feel yourself slowly becoming feral. When you reach Level 15, you are fully consumed by ghoulification, your mind is no longer your own, and your character is controlled by the GM</p>",
+      "chat": ""
+    },
+    "source": {},
+    "advancement": [
+      {
+        "type": "Size",
+        "_id": "2ktjSaPRT0jr1Dxo",
+        "configuration": {
+          "sizes": [
+            "med"
+          ]
+        },
+        "level": 0,
+        "value": {}
+      }
+    ],
+    "movement": {
+      "burrow": null,
+      "climb": null,
+      "fly": null,
+      "swim": null,
+      "walk": null,
+      "units": null,
+      "hover": false
+    },
+    "senses": {
+      "darkvision": null,
+      "blindsight": null,
+      "tremorsense": null,
+      "truesight": null,
+      "units": null,
+      "special": ""
+    },
+    "type": {
+      "value": "humanoid"
+    },
+    "identifier": ""
+  },
+  "effects": [],
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718034877191,
+    "modifiedTime": 1718034878086,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_id": "gW03i1ox7lDvuLZC",
+  "sort": 300000,
+  "_key": "!items!gW03i1ox7lDvuLZC"
+}
