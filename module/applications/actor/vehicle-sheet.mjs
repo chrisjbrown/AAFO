@@ -223,7 +223,7 @@ export default class ActorSheet5eVehicle extends ActorSheet5e {
       // Handle cargo explicitly
       const isCargo = item.flags.aafo?.vehicleCargo === true;
       if ( isCargo ) {
-        totalWeight += item.system.totalWeightin?.(units) ?? 0;
+        totalWeight += item.system.totalWeight ?? 0;
         cargo.cargo.items.push(item);
         continue;
       }
@@ -243,7 +243,7 @@ export default class ActorSheet5eVehicle extends ActorSheet5e {
           else features.actions.items.push(item);
           break;
         default:
-          totalWeight += item.system.totalWeightIn?.(units) ?? 0;
+          totalWeight += item.system.totalWeight;
           cargo.cargo.items.push(item);
       }
     }

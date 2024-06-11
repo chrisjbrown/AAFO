@@ -158,17 +158,17 @@ export default class AttributesFields {
       ?? CONFIG.AAFO.encumbrance.baseUnits.default;
     const unitSystem = game.settings.get("aafo", "metricWeightUnits") ? "metric" : "imperial";
 
-    // Get the total weight from items
-    let weight = this.parent.items
+    // Get the total load from items
+    let load = this.parent.items
       .filter(item => !item.container)
-      .reduce((weight, item) => weight + (item.system.totalWeightIn?.(baseUnits[unitSystem]) ?? 0), 0);
+      .reduce((load, item) => load + item.system.totalWeight, 0);
 
     // [Optional] add Currency Weight (for non-transformed actors)
     const currency = this.currency;
     if ( game.settings.get("aafo", "currencyWeight") && currency ) {
       const numCoins = Object.values(currency).reduce((val, denom) => val + Math.max(denom, 0), 0);
       const currencyPerWeight = config.currencyPerWeight[unitSystem];
-      weight += numCoins / currencyPerWeight;
+      load += numCoins / currencyPerWeight;
     }
 
     // Determine the Encumbrance size class
@@ -193,7 +193,7 @@ export default class AttributesFields {
     };
 
     // Populate final Encumbrance values
-    encumbrance.value = weight.toNearest(0.1);
+    encumbrance.value = load.toNearest(0.1);
     encumbrance.thresholds = {
       encumbered: calculateThreshold("encumbered"),
       heavilyEncumbered: calculateThreshold("heavilyEncumbered"),

@@ -193,7 +193,7 @@ export default class ContainerData extends ItemDataModel.mixin(
   get contentsWeight() {
     if ( this.parent?.pack && !this.parent?.isEmbedded ) return this.#contentsWeight();
     return this.contents.reduce((weight, item) =>
-      weight + item.system.totalWeightIn(this.weight.units), this.currencyWeight
+      weight + item.system.totalWeight, this.currencyWeight
     );
   }
 
@@ -204,7 +204,7 @@ export default class ContainerData extends ItemDataModel.mixin(
   async #contentsWeight() {
     const contents = await this.contents;
     return contents.reduce(async (weight, item) =>
-      await weight + await item.system.totalWeightIn(this.weight.units), this.currencyWeight
+      await weight + await item.system.totalWeight, this.currencyWeight
     );
   }
 

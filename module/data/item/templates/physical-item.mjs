@@ -25,6 +25,9 @@ export default class PhysicalItemTemplate extends SystemDataModel {
       quantity: new foundry.data.fields.NumberField({
         required: true, nullable: false, integer: true, initial: 1, min: 0, label: "AAFO.Quantity"
       }),
+      load: new foundry.data.fields.NumberField({
+        required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Load"
+      }),
       weight: new foundry.data.fields.SchemaField({
         value: new foundry.data.fields.NumberField({
           required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Weight"
@@ -200,18 +203,5 @@ export default class PhysicalItemTemplate extends SystemDataModel {
       depth++;
     }
     return containers;
-  }
-
-  /* -------------------------------------------- */
-
-  /**
-   * Calculate the total weight and return it in specific units.
-   * @param {string} units  Units in which the weight should be returned.
-   * @returns {number|Promise<number>}
-   */
-  totalWeightIn(units) {
-    const weight = this.totalWeight;
-    if ( weight instanceof Promise ) return weight.then(w => convertWeight(w, this.weight.units, units));
-    return convertWeight(weight, this.weight.units, units);
   }
 }
