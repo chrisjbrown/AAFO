@@ -9,7 +9,7 @@ import PhysicalItemTemplate from "./templates/physical-item.mjs";
 import MountableTemplate from "./templates/mountable.mjs";
 import ItemTypeField from "./fields/item-type-field.mjs";
 
-const { NumberField, SchemaField, SetField, StringField } = foundry.data.fields;
+const { NumberField, SchemaField, SetField, StringField, ArrayField } = foundry.data.fields;
 
 /**
  * Data definition for Equipment items.
@@ -43,11 +43,20 @@ export default class EquipmentData extends ItemDataModel.mixin(
       armor: new SchemaField({
         value: new NumberField({required: true, integer: true, min: 0, label: "AAFO.ArmorClass"}),
         magicalBonus: new NumberField({min: 0, integer: true, label: "AAFO.MagicalBonus"}),
+        damageThreshold: new NumberField({required: true, integer: true, min: 0, label: "AAFO.DamageThreshold"}),
         dex: new NumberField({required: true, integer: true, label: "AAFO.ItemEquipmentDexMod"})
       }),
+      
       properties: new SetField(new StringField(), {
         label: "AAFO.ItemEquipmentProperties"
       }),
+      upgradeSlots: new SchemaField({
+        count: new NumberField({required: true, integer: true, min: 0, label: "AAFO.UpdgradeSlotsCount"}),
+        slots: new ArrayField(new SchemaField({
+          type: new StringField({ required: true, blank: false }),
+          id: new StringField({ required: true, blank: false }),
+        }), { label: "AAFO.UpgradeSlots" })
+      }, { label: "AAFO.UpgradeSlots" }),
       speed: new SchemaField({
         value: new NumberField({required: true, min: 0, label: "AAFO.Speed"}),
         conditions: new StringField({required: true, label: "AAFO.SpeedConditions"})

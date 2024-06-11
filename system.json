@@ -115,6 +115,15 @@
       "flags": {}
     },
     {
+      "name": "items",
+      "label": "Items",
+      "system": "aafo",
+      "path": "packs/items",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
       "name": "backgrounds",
       "label": "Backgrounds",
       "system": "aafo",
@@ -240,7 +249,8 @@
       "sorting": "m",
       "color": "#cd2c1e",
       "packs": [
-        "rulesaafo"
+        "rulesaafo",
+        "items"
       ],
       "folders": [
         {

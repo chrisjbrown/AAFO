@@ -1,6 +1,6 @@
 import SystemDataModel from "../../abstract.mjs";
 
-const { BooleanField, StringField } = foundry.data.fields;
+const { BooleanField, StringField, SchemaField, NumberField } = foundry.data.fields;
 
 /**
  * Data model template with information on items that can be attuned and equipped.
@@ -14,6 +14,14 @@ export default class EquippableItemTemplate extends SystemDataModel {
   /** @inheritdoc */
   static defineSchema() {
     return {
+      decay: new SchemaField({
+        value: new NumberField({
+          nullable: false, integer: true, min: 0, initial: 0, label: "AAFO.DecayPointsCurrent"
+        }),
+        max: new NumberField({
+          nullable: true, integer: true, min: 0, initial: 10, label: "AAFO.DecayPointsMax"
+        })
+      }, {label: "AAFO.Decay"}),
       attunement: new StringField({required: true, label: "AAFO.Attunement"}),
       attuned: new BooleanField({label: "AAFO.Attuned"}),
       equipped: new BooleanField({required: true, label: "AAFO.Equipped"})

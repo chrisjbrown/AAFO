@@ -137,6 +137,22 @@
                 </div>
             </div>
 
+            {{!-- Damage Threshold --}}
+            <div class="form-group">
+                <label>{{ localize "AAFO.DamageThreshold" }}</label>
+                <div class="form-fields">
+                    {{ numberInput source.armor.damageThreshold name="system.armor.damageThreshold" }}
+                </div>
+            </div>
+
+            {{!-- Upgrade Slots --}}
+            <div class="form-group">
+                <label>{{ localize "AAFO.UpgradeSlots" }}</label>
+                <div class="form-fields">
+                    {{ numberInput source.upgradeSlots.count name="system.upgradeSlots.count" min="0" }}
+                </div>
+            </div>
+
             {{#if properties.mgc.selected}}
             <div class="form-group">
                 <label>{{ localize "AAFO.MagicalBonus" }}</label>

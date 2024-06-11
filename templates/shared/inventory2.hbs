@@ -117,7 +117,7 @@
             <div class="items-header header">
                 <h3 class="item-name">{{ localize label }}</h3>
                 <div class="item-header item-price">{{ localize "AAFO.Price" }}</div>
-                <div class="item-header item-weight">{{ localize "AAFO.Weight" }}</div>
+                <div class="item-header item-weight">{{ localize "AAFO.Load" }}</div>
                 <div class="item-header item-quantity">{{ localize "AAFO.Quantity" }}</div>
                 <div class="item-header item-uses">{{ localize "AAFO.Charges" }}</div>
                 <div class="item-header item-controls"></div>
@@ -159,10 +159,10 @@
                     </div>
 
                     {{!-- Item Price --}}
-                    <div class="item-detail item-price {{#unless item.system.price.value}}empty{{/unless}}">
-                        {{#if item.system.price.value}}
-                        {{ifThen ctx.concealDetails "—" (aafo-numberFormat item.system.price.value)}}
-                        <i class="currency {{ item.system.price.denomination }}"></i>
+                    <div class="item-detail item-price {{#unless item.system.price}}empty{{/unless}}">
+                        {{#if item.system.price}}
+                        {{ifThen ctx.concealDetails "—" (aafo-numberFormat item.system.price)}}
+                        {{!-- <i class="currency {{ item.system.price.denomination }}"></i> --}}
                         {{/if}}
                     </div>
 

@@ -157,7 +157,7 @@ export default class AttributesFields {
     // Get the total load from items
     let load = this.parent.items
       .filter(item => !item.container)
-      .reduce((load, item) => load + item.system.totalWeight, 0);
+      .reduce((load, item) => load + (item.system.totalWeight ?? 0), 0);
 
     // [Optional] add Currency Weight (for non-transformed actors)
     // const currency = this.currency;

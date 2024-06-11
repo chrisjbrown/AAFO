@@ -9,7 +9,7 @@
                 </a>
             </h3>
             {{#each system.currency as |v k|}}
-            <label class="denomination {{k}}">{{lookup (lookup @root.config.currencies k) "label"}}</label>
+            {{!-- <label class="denomination {{k}}">{{lookup (lookup @root.config.currencies k) "label"}}</label> --}}
             <input type="text" name="system.currency.{{k}}" value="{{v}}" data-dtype="Number">
             {{/each}}
         </ol>

@@ -23,10 +23,10 @@
             {{#if concealDetails}}
             <input type="text" value="{{localize 'AAFO.Unidentified.Value'}}" disabled>
             {{else}}
-            {{numberInput system.price.value name="system.price.value"}}
-            <select name="system.price.denomination">
+            {{numberInput system.price name="system.price"}}
+            {{!-- <select name="system.price.denomination">
                 {{selectOptions config.currencies selected=system.price.denomination labelAttr="abbreviation"}}
-            </select>
+            </select> --}}
             {{/if}}
         </div>
         {{/if}}

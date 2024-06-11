@@ -17,8 +17,8 @@
         <div class="bottom">
             <div class="price">
                 {{#if price}}
-                <i class="currency {{ price.denomination }}"></i>
-                <span>{{ aafo-numberFormat price.value }}</span>
+                {{!-- <i class="currency {{ price.denomination }}"></i> --}}
+                <span>{{ aafo-numberFormat price }}</span>
                 {{/if}}
             </div>
 

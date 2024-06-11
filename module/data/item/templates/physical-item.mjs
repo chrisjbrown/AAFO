@@ -7,8 +7,7 @@ import SystemDataModel from "../../abstract.mjs";
  * @property {number} quantity            Number of items in a stack.
  * @property {object} load                Items load
  * @property {object} price
- * @property {number} price.value         Item's cost in the specified denomination.
- * @property {string} price.denomination  Currency denomination used to determine price.
+ * @property {number} price               Item's cost.
  * @property {string} rarity              Item rarity as defined in `AAFO.itemRarity`.
  * @mixin
  */
@@ -34,14 +33,10 @@ export default class PhysicalItemTemplate extends SystemDataModel {
       //     initial: () => game.settings.get("aafo", "metricWeightUnits") ? "kg" : "lb"
       //   })
       // }, {label: "AAFO.Weight"}),
-      price: new foundry.data.fields.SchemaField({
-        value: new foundry.data.fields.NumberField({
-          required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Price"
-        }),
-        denomination: new foundry.data.fields.StringField({
-          required: true, blank: false, initial: "gp", label: "AAFO.Currency"
-        })
+      price: new foundry.data.fields.NumberField({
+        required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Price"
       }, {label: "AAFO.Price"}),
+
       rarity: new foundry.data.fields.StringField({required: true, blank: true, label: "AAFO.Rarity"})
     };
   }
@@ -59,13 +54,13 @@ export default class PhysicalItemTemplate extends SystemDataModel {
   /* -------------------------------------------- */
 
   /**
-   * Get a human-readable label for the price and denomination.
+   * Get a human-readable label for the price
    * @type {string}
    */
   get priceLabel() {
-    const { value, denomination } = this.price;
-    const hasPrice = value && (denomination in CONFIG.AAFO.currencies);
-    return hasPrice ? `${value} ${CONFIG.AAFO.currencies[denomination].label}` : null;
+    const { value } = this.price;
+    const hasPrice = value;
+    return hasPrice ? `${value}` : null;
   }
 
   /* -------------------------------------------- */
