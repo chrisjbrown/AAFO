@@ -75,7 +75,7 @@ export default class PhysicalItemTemplate extends SystemDataModel {
    * @type {number}
    */
   get totalWeight() {
-    return this.quantity * this.load.value;
+    return this.quantity * this.load;
   }
 
   /* -------------------------------------------- */

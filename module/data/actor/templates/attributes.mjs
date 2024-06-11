@@ -152,11 +152,7 @@ export default class AttributesFields {
    * @param {object} rollData  The Actor's roll data.
    */
   static prepareEncumbrance(rollData) {
-    const config = CONFIG.AAFO.encumbrance;
     const encumbrance = this.attributes.encumbrance ??= {};
-    const baseUnits = CONFIG.AAFO.encumbrance.baseUnits[this.parent.type]
-      ?? CONFIG.AAFO.encumbrance.baseUnits.default;
-    const unitSystem = game.settings.get("aafo", "metricWeightUnits") ? "metric" : "imperial";
 
     // Get the total load from items
     let load = this.parent.items
@@ -164,21 +160,12 @@ export default class AttributesFields {
       .reduce((load, item) => load + item.system.totalWeight, 0);
 
     // [Optional] add Currency Weight (for non-transformed actors)
-    const currency = this.currency;
-    if ( game.settings.get("aafo", "currencyWeight") && currency ) {
-      const numCoins = Object.values(currency).reduce((val, denom) => val + Math.max(denom, 0), 0);
-      const currencyPerWeight = config.currencyPerWeight[unitSystem];
-      load += numCoins / currencyPerWeight;
-    }
-
-    // Determine the Encumbrance size class
-    const keys = Object.keys(CONFIG.AAFO.actorSizes);
-    const index = keys.findIndex(k => k === this.traits.size);
-    const sizeConfig = CONFIG.AAFO.actorSizes[
-      keys[this.parent.flags.aafo?.powerfulBuild ? Math.min(index + 1, keys.length - 1) : index]
-    ];
-    const sizeMod = sizeConfig?.capacityMultiplier ?? sizeConfig?.token ?? 1;
-    let maximumMultiplier;
+    // const currency = this.currency;
+    // if ( game.settings.get("aafo", "currencyWeight") && currency ) {
+    //   const numCoins = Object.values(currency).reduce((val, denom) => val + Math.max(denom, 0), 0);
+    //   const currencyPerWeight = config.currencyPerWeight[unitSystem];
+    //   load += numCoins / currencyPerWeight;
+    // }
 
     const calculateThreshold = threshold => {
       let base = this.abilities.str?.value ?? 10;
@@ -193,7 +180,6 @@ export default class AttributesFields {
       maximum: calculateThreshold("maximum")
     };
     encumbrance.max = encumbrance.thresholds.maximum;
-    encumbrance.mod = (sizeMod * maximumMultiplier).toNearest(0.1);
     encumbrance.stops = {
       encumbered: Math.clamp((encumbrance.thresholds.encumbered * 100) / encumbrance.max, 0, 100),
       heavilyEncumbered: Math.clamp((encumbrance.thresholds.heavilyEncumbered * 100) / encumbrance.max, 0, 100)
