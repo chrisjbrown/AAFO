@@ -14,11 +14,8 @@
           {{/unless}}
 
         <div class="form-group">
-            <label>{{ localize "AAFO.Weight" }}</label>
-            {{ numberInput system.weight.value name="system.weight.value" }}
-            <select name="system.weight.units">
-                {{ selectOptions config.weightUnits selected=system.weight.units labelAttr="abbreviation" }}
-            </select>
+            <label>{{ localize "AAFO.Load" }}</label>
+            {{ numberInput system.load name="system.weight" }}
         </div>
 
         <div class="form-group">

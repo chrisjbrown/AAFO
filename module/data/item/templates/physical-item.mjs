@@ -1,4 +1,3 @@
-import { convertWeight } from "../../../utils.mjs";
 import SystemDataModel from "../../abstract.mjs";
 
 /**
@@ -6,9 +5,7 @@ import SystemDataModel from "../../abstract.mjs";
  *
  * @property {string} container           Container within which this item is located.
  * @property {number} quantity            Number of items in a stack.
- * @property {object} weight
- * @property {number} weight.value        Item's weight.
- * @property {string} weight.units        Units used to measure the weight.
+ * @property {object} load                Items load
  * @property {object} price
  * @property {number} price.value         Item's cost in the specified denomination.
  * @property {string} price.denomination  Currency denomination used to determine price.
@@ -28,15 +25,15 @@ export default class PhysicalItemTemplate extends SystemDataModel {
       load: new foundry.data.fields.NumberField({
         required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Load"
       }),
-      weight: new foundry.data.fields.SchemaField({
-        value: new foundry.data.fields.NumberField({
-          required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Weight"
-        }),
-        units: new foundry.data.fields.StringField({
-          required: true, label: "AAFO.WeightUnit.Label",
-          initial: () => game.settings.get("aafo", "metricWeightUnits") ? "kg" : "lb"
-        })
-      }, {label: "AAFO.Weight"}),
+      // weight: new foundry.data.fields.SchemaField({
+      //   value: new foundry.data.fields.NumberField({
+      //     required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Weight"
+      //   }),
+      //   units: new foundry.data.fields.StringField({
+      //     required: true, label: "AAFO.WeightUnit.Label",
+      //     initial: () => game.settings.get("aafo", "metricWeightUnits") ? "kg" : "lb"
+      //   })
+      // }, {label: "AAFO.Weight"}),
       price: new foundry.data.fields.SchemaField({
         value: new foundry.data.fields.NumberField({
           required: true, nullable: false, initial: 0, min: 0, label: "AAFO.Price"
@@ -78,60 +75,7 @@ export default class PhysicalItemTemplate extends SystemDataModel {
    * @type {number}
    */
   get totalWeight() {
-    return this.quantity * this.weight.value;
-  }
-
-  /* -------------------------------------------- */
-  /*  Migrations                                  */
-  /* -------------------------------------------- */
-
-  /** @inheritdoc */
-  static _migrateData(source) {
-    super._migrateData(source);
-    PhysicalItemTemplate.#migratePrice(source);
-    PhysicalItemTemplate.#migrateRarity(source);
-    PhysicalItemTemplate.#migrateWeight(source);
-  }
-
-  /* -------------------------------------------- */
-
-  /**
-   * Migrate the item's price from a single field to an object with currency.
-   * @param {object} source  The candidate source data from which the model will be constructed.
-   */
-  static #migratePrice(source) {
-    if ( !("price" in source) || foundry.utils.getType(source.price) === "Object" ) return;
-    source.price = {
-      value: Number.isNumeric(source.price) ? Number(source.price) : 0,
-      denomination: "gp"
-    };
-  }
-
-  /* -------------------------------------------- */
-
-  /**
-   * Migrate the item's rarity from freeform string to enum value.
-   * @param {object} source  The candidate source data from which the model will be constructed.
-   */
-  static #migrateRarity(source) {
-    if ( !("rarity" in source) || CONFIG.AAFO.itemRarity[source.rarity] ) return;
-    source.rarity = Object.keys(CONFIG.AAFO.itemRarity).find(key =>
-      CONFIG.AAFO.itemRarity[key].toLowerCase() === source.rarity.toLowerCase()
-    ) ?? "";
-  }
-
-  /* -------------------------------------------- */
-
-  /**
-   * Migrate the item's weight from a single field to an object with units & convert null weights to 0.
-   * @param {object} source  The candidate source data from which the model will be constructed.
-   */
-  static #migrateWeight(source) {
-    if ( !("weight" in source) || (foundry.utils.getType(source.weight) === "Object") ) return;
-    source.weight = {
-      value: Number.isNumeric(source.weight) ? Number(source.weight) : 0,
-      units: game.settings.get("aafo", "metricWeightUnits") ? "kg" : "lb"
-    };
+    return this.quantity * this.load.value;
   }
 
   /* -------------------------------------------- */

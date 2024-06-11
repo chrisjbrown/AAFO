@@ -182,14 +182,7 @@ export default class AttributesFields {
 
     const calculateThreshold = threshold => {
       let base = this.abilities.str?.value ?? 10;
-      const bonus = simplifyBonus(encumbrance.bonuses?.[threshold], rollData)
-        + simplifyBonus(encumbrance.bonuses?.overall, rollData);
-      let multiplier = simplifyBonus(encumbrance.multipliers[threshold], rollData)
-        * simplifyBonus(encumbrance.multipliers.overall, rollData);
-      if ( threshold === "maximum" ) maximumMultiplier = multiplier;
-      if ( this.parent.type === "vehicle" ) base = this.attributes.capacity.cargo;
-      else multiplier *= (config.threshold[threshold]?.[unitSystem] ?? 1) * sizeMod;
-      return (base * multiplier).toNearest(0.1) + bonus;
+      return base * 10;
     };
 
     // Populate final Encumbrance values
