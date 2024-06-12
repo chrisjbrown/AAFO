@@ -1,0 +1,22 @@
+{
+  "name": "Armor",
+  "sorting": "a",
+  "folder": null,
+  "type": "Item",
+  "_id": "HLYp6ZjBfTb3UXqH",
+  "description": "",
+  "sort": 0,
+  "color": null,
+  "flags": {},
+  "_stats": {
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "coreVersion": "12.325",
+    "systemId": "aafo",
+    "systemVersion": "0.0.1",
+    "createdTime": 1718123200137,
+    "modifiedTime": 1718123200137,
+    "lastModifiedBy": "aafobuilder00000"
+  },
+  "_key": "!folders!HLYp6ZjBfTb3UXqH"
+}

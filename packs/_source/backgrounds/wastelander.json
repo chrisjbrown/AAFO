@@ -10,7 +10,36 @@
     "source": {},
     "startingEquipment": [],
     "identifier": "",
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "UF8uC7g8KdlRjVGO",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "bar": 0,
+            "bre": 0,
+            "cra": 0,
+            "ene": 0,
+            "exp": 0,
+            "gun": 2,
+            "int": 0,
+            "med": 0,
+            "mel": 0,
+            "sci": 0,
+            "sne": 0,
+            "spe": 0,
+            "sur": 2,
+            "una": 2
+          }
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -25,7 +54,7 @@
     "systemId": "aafo",
     "systemVersion": "0.0.1",
     "createdTime": 1718034854133,
-    "modifiedTime": 1718034854133,
+    "modifiedTime": 1718210911403,
     "lastModifiedBy": "aafobuilder00000"
   },
   "_id": "W1LFc1XJ7pRLbujF",

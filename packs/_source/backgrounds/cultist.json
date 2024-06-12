@@ -10,7 +10,52 @@
     "source": {},
     "startingEquipment": [],
     "identifier": "",
-    "advancement": []
+    "advancement": [
+      {
+        "_id": "jRPQUCCkuPEo6X51",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.aafo.items.Item.hLjhFqsQTdHJmvEG",
+              "optional": false
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 0
+      },
+      {
+        "_id": "S3AiWGWFj7lFdrR5",
+        "type": "SkillImprovement",
+        "configuration": {
+          "points": 0,
+          "fixed": {
+            "bar": 0,
+            "bre": 0,
+            "cra": 0,
+            "ene": 0,
+            "exp": 0,
+            "gun": 0,
+            "int": 0,
+            "med": 0,
+            "mel": 2,
+            "sci": 0,
+            "sne": 2,
+            "spe": 2,
+            "sur": 0,
+            "una": 0
+          }
+        },
+        "value": {
+          "type": "asi"
+        },
+        "level": 0,
+        "title": ""
+      }
+    ]
   },
   "effects": [],
   "folder": null,
@@ -25,10 +70,10 @@
     "systemId": "aafo",
     "systemVersion": "0.0.1",
     "createdTime": 1718034833537,
-    "modifiedTime": 1718034852190,
+    "modifiedTime": 1718210348231,
     "lastModifiedBy": "aafobuilder00000"
   },
   "_id": "Tok2QMdpg1HUwZQU",
-  "sort": 1600000,
+  "sort": 1250000,
   "_key": "!items!Tok2QMdpg1HUwZQU"
 }
