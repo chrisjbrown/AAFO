@@ -5,8 +5,15 @@
         <li class="hint">
             {{localize "AAFO.AdvancementSkillImprovementPointsHint"}}
         </li>
-        {{#each abilities}}
-        {{> "aafo.advancement-skill-control" this canAdjust=true}}
-        {{/each}}
     </ul>
+
+    <fieldset class="selected-trait">
+        <legend>{{localize "AAFO.AdvancementTraitGrants"}}</legend>
+        <p class="hint">{{localize "AAFO.AdvancementTraitGrantsHint"}}</p>
+        <ul class="skill-scores">
+            {{#each skills}}
+            {{> "aafo.advancement-skill-control" this canAdjust=true}}
+            {{/each}}
+        </ul>
+    </fieldset>
 </form>

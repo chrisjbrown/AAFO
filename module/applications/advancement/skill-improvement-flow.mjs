@@ -13,14 +13,6 @@ export default class SkillImprovementFlow extends AdvancementFlow {
 
   /* -------------------------------------------- */
 
-  /**
-   * The dropped feat item.
-   * @type {Item5e}
-   */
-  feat;
-
-  /* -------------------------------------------- */
-
   /** @inheritdoc */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
@@ -35,8 +27,6 @@ export default class SkillImprovementFlow extends AdvancementFlow {
   async retainData(data) {
     await super.retainData(data);
     this.assignments = this.retainedData.assignments ?? {};
-    const featUuid = Object.values(this.retainedData.feat ?? {})[0];
-    if ( featUuid ) this.feat = await fromUuid(featUuid);
   }
 
   /* -------------------------------------------- */
@@ -62,17 +52,19 @@ export default class SkillImprovementFlow extends AdvancementFlow {
     const skills = Object.entries(CONFIG.AAFO.skills).reduce((obj, [key, data]) => {
       const skill = this.advancement.actor.system.skills[key];
       const assignment = this.assignments[key] ?? 0;
-      const value = skill.value + (assignment ?? 0);
+      const fixed = this.advancement.configuration.fixed[key] ?? 0;
+      const value = skill.value + ((fixed || assignment) ?? 0);
       obj[key] = {
         key, value,
         name: `skills.${key}`,
         label: data.label,
         initial: skill.value,
-        min: 0,
+        min: fixed || 0,
         delta: (value - skill.value) ? formatter.format(value - skill.value) : null,
         showDelta: true,
-        canIncrease: points.available > 0,
-        canDecrease: (value > 0),
+        isFixed: !!fixed,
+        canIncrease: !fixed && points.available > 0,
+        canDecrease: assignment > 0,
       };
       return obj;
     }, {});
@@ -94,8 +86,6 @@ export default class SkillImprovementFlow extends AdvancementFlow {
   activateListeners(html) {
     super.activateListeners(html);
     html.find(".adjustment-button").click(this._onClickButton.bind(this));
-    html.find("a[data-uuid]").click(this._onClickFeature.bind(this));
-    html.find("[data-action='delete']").click(this._onItemDelete.bind(this));
   }
 
   /* -------------------------------------------- */
@@ -136,77 +126,12 @@ export default class SkillImprovementFlow extends AdvancementFlow {
 
   /* -------------------------------------------- */
 
-  /**
-   * Handle clicking on a feature during item grant to preview the feature.
-   * @param {MouseEvent} event  The triggering event.
-   * @protected
-   */
-  async _onClickFeature(event) {
-    event.preventDefault();
-    const uuid = event.currentTarget.dataset.uuid;
-    const item = await fromUuid(uuid);
-    item?.sheet.render(true);
-  }
-
-  /* -------------------------------------------- */
-
   /** @inheritdoc */
   async _updateObject(event, formData) {
-    // TODO: Pass through retained feat data
     await this.advancement.apply(this.level, {
-      type: this.feat ? "feat" : "asi",
+      type: "asi",
       assignments: this.assignments,
-      featUuid: this.feat?.uuid,
       retainedItems: this.retainedData?.retainedItems
     });
-  }
-
-  /* -------------------------------------------- */
-  /*  Drag & Drop                                 */
-  /* -------------------------------------------- */
-
-  /**
-   * Handle deleting a dropped feat.
-   * @param {Event} event  The originating click event.
-   * @protected
-   */
-  async _onItemDelete(event) {
-    event.preventDefault();
-    this.feat = null;
-    this.render();
-  }
-
-  /* -------------------------------------------- */
-
-  /** @inheritdoc */
-  async _onDrop(event) {
-    if ( !this.advancement.allowFeat ) return false;
-
-    // Try to extract the data
-    let data;
-    try {
-      data = JSON.parse(event.dataTransfer.getData("text/plain"));
-    } catch(err) {
-      return false;
-    }
-
-    if ( data.type !== "Item" ) return false;
-    const item = await Item.implementation.fromDropData(data);
-
-    if ( (item.type !== "feat") || (item.system.type.value !== "feat") ) {
-      ui.notifications.error("AAFO.AdvancementSkillImprovementFeatWarning", {localize: true});
-      return null;
-    }
-
-    // If a feat has a level pre-requisite, make sure it is less than or equal to current character level
-    if ( (item.system.prerequisites?.level ?? -Infinity) > this.advancement.actor.system.details.level ) {
-      ui.notifications.error(game.i18n.format("AAFO.AdvancementSkillImprovementFeatLevelWarning", {
-        level: item.system.prerequisites.level
-      }));
-      return null;
-    }
-
-    this.feat = item;
-    this.render();
   }
 }

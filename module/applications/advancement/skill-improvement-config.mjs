@@ -17,9 +17,14 @@ export default class SkillImprovementConfig extends AdvancementConfig {
   /** @inheritdoc */
   getData() {
     const skills = Object.entries(CONFIG.AAFO.skills).reduce((obj, [key, data]) => {
+      const fixed = this.advancement.configuration.fixed[key] ?? 0;
       obj[key] = {
         key,
+        name: `configuration.fixed.${key}`,
         label: data.label,
+        value: fixed,
+        canIncrease: true,
+        canDecrease: true
       };
       return obj;
     }, {});

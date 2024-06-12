@@ -15,17 +15,21 @@ export class SkillImprovementConfigurationData extends foundry.abstract.DataMode
         integer: true, min: 0, initial: 4,
         label: "AAFO.AdvancementSkillImprovementPoints",
         hint: "AAFO.AdvancementSkillImprovementPointsHint"
-      })
+      }),
+      fixed: new MappingField(
+        new foundry.data.fields.NumberField({nullable: false, integer: true, initial: 0}),
+        {label: "AAFO.AdvancementAbilityScoreImprovementFixed"}
+      )
     };
   }
 }
 
 /**
- * Data model for the Ability Score Improvement advancement value.
+ * Data model for the Skill Improvement advancement value.
  *
  * @property {string} type  When on a class, whether the player chose ASI or a Feat.
  * @property {Object<string, number>}  Points assigned to individual scores.
- * @property {Object<string, string>}  Feat that was selected.
+ * @property {Object<string, string>}  Skill that was selected.
  */
 export class SkillImprovementValueData extends SparseDataModel {
   /** @inheritdoc */

@@ -19,7 +19,7 @@ export default class SkillImprovementAdvancement extends Advancement {
         value: SkillImprovementValueData
       },
       order: 20,
-      icon: "systems/aafo/icons/svg/skill-improvement.svg",
+      icon: "systems/aafo/icons/svg/trait.svg",
       title: game.i18n.localize("AAFO.AdvancementSkillImprovementTitle"),
       hint: game.i18n.localize("AAFO.AdvancementSkillImprovementHint"),
       apps: {
@@ -62,9 +62,13 @@ export default class SkillImprovementAdvancement extends Advancement {
   summaryForLevel(level, { configMode=false }={}) {
     const formatter = new Intl.NumberFormat(game.i18n.lang, { signDisplay: "always" });
     if ( configMode ) {
-      const entries = [];
+      const entries = Object.entries(this.configuration.fixed).map(([key, value]) => {
+        if ( !value ) return null;
+        const name = CONFIG.AAFO.skills[key]?.label ?? key;
+        return `<span class="tag">${name} <strong>${formatter.format(value)}</strong></span>`;
+      });
       if ( this.configuration.points ) entries.push(`<span class="tag">${
-        game.i18n.localize("AAFO.AdvancementSkillImprovementPoints")}: <strong>${
+        game.i18n.localize("AAFO.AdvancementAbilityScoreImprovementPoints")}: <strong>${
         this.configuration.points}</strong></span>`
       );
       return entries.filterJoin("\n");
@@ -88,7 +92,7 @@ export default class SkillImprovementAdvancement extends Advancement {
   /** @inheritdoc */
   async apply(level, data) {
     if ( data.type === "asi" ) {
-      const assignments = foundry.utils.mergeObject(data.assignments, {inplace: false});
+      const assignments = foundry.utils.mergeObject(this.configuration.fixed, data.assignments, {inplace: false});
       const updates = {};
       for ( const key of Object.keys(assignments) ) {
         const skill = this.actor.system.skills[key];
