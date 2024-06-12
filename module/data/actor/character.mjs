@@ -230,7 +230,8 @@ export default class CharacterData extends CreatureTemplate {
         type: new StringField({ required: true, blank: false }),
         id: new StringField({ required: true, blank: false }),
         sort: new IntegerSortField()
-      }), { label: "AAFO.Favorites" })
+      }), { label: "AAFO.Favorites" }),
+      caps: new NumberField({integer: true, min: 0, initial: 0, label: "AAFO.Caps"}),
     });
   }
 

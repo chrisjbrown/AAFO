@@ -75,7 +75,7 @@ export default class ActorSheet5eCharacter2 extends ActorSheet5eCharacter {
     { tab: "details", label: "AAFO.Details", icon: "fas fa-cog" },
     { tab: "inventory", label: "AAFO.Inventory", svg: "backpack" },
     { tab: "features", label: "AAFO.Features", icon: "fas fa-list" },
-    { tab: "spells", label: "TYPES.Item.spellPl", icon: "fas fa-book" },
+    // { tab: "spells", label: "TYPES.Item.spellPl", icon: "fas fa-book" },
     { tab: "effects", label: "AAFO.Effects", icon: "fas fa-bolt" },
     { tab: "biography", label: "AAFO.Biography", icon: "fas fa-feather" }
   ];

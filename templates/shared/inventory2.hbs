@@ -60,7 +60,7 @@
     </div>
 
     {{!-- Currency --}}
-    <section class="currency">
+    {{!-- <section class="currency">
         <button type="button" class="item-action unbutton" data-action="currency"
                 data-tooltip="AAFO.CurrencyManager.Title" aria-label="{{ localize "AAFO.CurrencyManager.Title" }}">
             <i class="fas fa-coins"></i>
@@ -73,6 +73,18 @@
                    data-dtype="Number" inputmode="numeric" pattern="[0-9+=\-]*">
         </label>
         {{/each}}
+    </section> --}}
+    <section class="caps">
+        <label for="system.caps" aria-label="{{ localize "AAFO.Caps" }}">
+            {{ localize "AAFO.Caps" }}:
+        </label>
+
+        {{#if @root.editable}}
+        <input type="text" class="uninput" name="system.caps" value="{{ system.caps }}"
+            data-dtype="Number" inputmode="numeric" pattern="[0-9+=\-]*">
+        {{else}}
+        <div>{{ system.caps }}</div>
+        {{/if}}
     </section>
 
     {{!-- Searching, Filtering, Sorting, & Grouping, & Attunement --}}
@@ -91,7 +103,7 @@
         </item-list-controls>
 
         {{!-- Attunement --}}
-        {{#with system.attributes.attunement}}
+        {{!-- {{#with system.attributes.attunement}}
         <div class="attunement">
             <i class="fas fa-sun" data-tooltip="AAFO.Attunement" aria-label="{{ localize "AAFO.Attunement" }}"></i>
             <span class="value">{{ value }}</span>
@@ -102,7 +114,7 @@
             <span class="max">{{ max }}</span>
             {{/if}}
         </div>
-        {{/with}}
+        {{/with}} --}}
 
     </div>
 

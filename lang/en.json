@@ -409,6 +409,7 @@
   "AAFO.Bonuses": "Global Bonuses",
   "AAFO.BonusesHint": "Define global bonuses as formulas which are added to certain rolls. For example: 1d4 + 2",
   "AAFO.BonusesInstructions": "Configure character bonuses which are added to the appropriate dice roll",
+  "AAFO.Caps": "Caps",
   "AAFO.Conditions": "Conditions",
   "AAFO.Controls": {
     "Hint": "Enable various hints throughout the UI for certain mouse and keyboard controls.",
